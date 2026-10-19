@@ -4,8 +4,8 @@ import { bank, choose, giftById, newSession, progress, rate, savePreference, STO
 import { radar, reasonsFor, specialOptions } from './data/radar';
 import { copyData, download, exportJSON, loadSession, saveSession, shareFile } from './storage';
 import type { AnswerStatus, Gift, Preference, Session } from './types';
-import RewardExperience, { GrandPrizeCard } from './RewardExperience';
-import { clearRewards } from './rewardMachine';
+import RewardExperience, { PrizeCard } from './RewardExperience';
+import { clearRewards, type Prize } from './rewardMachine';
 
 function GiftArt({gift,small=false}:{gift:Gift;small?:boolean}) {
   return <div className={`gift-art ${small?'small':''}`} data-category={bank.categories.indexOf(gift.category)}>
@@ -120,7 +120,7 @@ function PairQuestion({session,onChoose}:{session:Session;onChoose:(chosen:'left
     <p className="pair-footnote">价格是大致范围，图标仅帮助理解。条件以文字为准。</p>
   </section>;
 }
-function Result({session,onCapture,onPrizeCapture,onDownload,onShare,onCopy,onRestart}:{session:Session;onCapture:()=>void;onPrizeCapture:()=>void;onDownload:()=>void;onShare:()=>void;onCopy:()=>void;onRestart:()=>void}) {
+function Result({session,onCapture,onPrizeCapture,onDownload,onShare,onCopy,onRestart}:{session:Session;onCapture:()=>void;onPrizeCapture:(prize:Prize)=>void;onDownload:()=>void;onShare:()=>void;onCopy:()=>void;onRestart:()=>void}) {
   const summary=summarize(session);
   return <main className="result">
     <div className="result-intro"><div className="celebrate">✦ <Cat size={54} strokeWidth={1.4}/> ✧</div>
@@ -150,6 +150,7 @@ export default function App() {
   const [session,setSession]=useState<Session|null>(initial.session),[entered,setEntered]=useState(false);
   const [storageError,setStorageError]=useState(initial.error),[menu,setMenu]=useState(false),[notice,setNotice]=useState('');
   const [modal,setModal]=useState<'clear'|'restart'|'capture'|'prize'|'copy'|'share'|null>(null),[copyText,setCopyText]=useState('');
+  const [capturedPrize,setCapturedPrize]=useState<Prize|null>(null);
   const [lastRating,setLastRating]=useState<number|null>(null),[reasonIndex,setReasonIndex]=useState<number|null>(null);
   const sessionRef=useRef(session),lastTick=useRef(Date.now()),lastAction=useRef(Date.now()),locked=useRef(false);
   useEffect(()=>{sessionRef.current=session;},[session]);
@@ -258,7 +259,7 @@ export default function App() {
       {lastRating!==null&&<button className="last-reason" onClick={()=>setReasonIndex(lastRating)}><span><Check size={15}/> 刚才那份礼物，记好啦</span><strong>补个原因 <span>选填</span></strong></button>}
       <div className="game-footer"><Cat size={17}/>{current==='radar'?'喜欢与不喜欢，都可以放心选。':current==='rating'?'不用照顾送礼人的心情，照顾你的就好。':'没有标准答案，按你的感觉来。'}</div>
     </main>}
-    {current==='result'&&session?.completed&&<Result session={session} onCapture={()=>setModal('capture')} onPrizeCapture={()=>setModal('prize')} onDownload={downloadData} onShare={share} onCopy={copy} onRestart={()=>setModal('restart')}/>}
+    {current==='result'&&session?.completed&&<Result session={session} onCapture={()=>setModal('capture')} onPrizeCapture={prize=>{setCapturedPrize(prize);setModal('prize');}} onDownload={downloadData} onShare={share} onCopy={copy} onRestart={()=>setModal('restart')}/>}
     {notice&&<div className="toast" role="status">{notice}</div>}
     {(modal||reasonAnswer)&&<div className="modal-backdrop"><section className={`modal ${modal==='capture'?'capture-modal':modal==='prize'?'prize-capture-modal':''}`} role="dialog" aria-modal="true" aria-label={modal==='capture'?'截图保存礼物图鉴':modal==='prize'?'截图保存中奖兑换券':reasonAnswer?'补充礼物原因':'数据与进度操作'}>
       <button className="icon-button modal-close" aria-label="关闭弹窗" onClick={()=>{setModal(null);setReasonIndex(null);}}><X/></button>
@@ -267,7 +268,7 @@ export default function App() {
       {modal==='share'&&<><div className="modal-emoji">💌</div><h2>换个方式，把心意带走</h2><p>这个浏览器暂时不能分享文件。可以下载后在微信发送文件，或直接复制完整数据发给李老师。</p><button className="primary" onClick={downloadData}>下载 JSON</button><button className="secondary" onClick={copy}>复制数据</button><p className="fine-print">微信里下载不了时：先复制备份，再从右上角「···」用浏览器打开。不同浏览器不会自动同步进度。</p></>}
       {modal==='copy'&&<><h2>长按下面的文字，全选复制</h2><p>浏览器没有开放一键复制，可以手动把完整内容复制到备忘录或微信。</p><textarea aria-label="完整礼物数据" readOnly value={copyText} onFocus={e=>e.target.select()}/></>}
       {modal==='capture'&&session&&<><p className="capture-instruction">用手机截屏，收藏这一页就好啦</p><div className="capture-card"><div className="capture-brand"><GiftIcon size={16}/> 礼物偏好研究所</div><h2>{summarize(session).title}的小图鉴</h2><p>{[...summarize(session).styles,...summarize(session).colors].slice(0,4).join(' · ')||'每一个选择，都算数。'}</p><div className="atlas-snapshot"><span>想多看一眼</span><p>{summarize(session).categories.join('、')||'暂时留一点神秘感'}</p><span>这次让你开心的小东西</span>{summarize(session).best.map(g=><p key={g.name}>{g.name} · {g.rating} / 10</p>)}</div><p className="capture-thanks">谢谢你，把一点时间分给我的小小研究 ♡</p></div></>}
-      {modal==='prize'&&session?.completed&&<><p className="capture-instruction">用手机截屏，带着兑换券去找李老师吧 ♡</p><GrandPrizeCard compact/></>}
+      {modal==='prize'&&session?.completed&&capturedPrize&&<><p className="capture-instruction">{capturedPrize==='no_prize'?'用手机截屏，收藏这次转盘结果吧 ♡':'用手机截屏，带着兑换券去找李老师吧 ♡'}</p><PrizeCard prize={capturedPrize} compact/></>}
       {reasonAnswer&&session&&reasonIndex!==null&&<><h2>刚才为什么这样选呀？</h2><p>{giftById.get(reasonAnswer.gift_id)!.name} · {reasonAnswer.rating!==null?`${reasonAnswer.rating} 分`:'暂时没有评分'}</p><div className="reason-tags">{reasonsFor(giftById.get(reasonAnswer.gift_id)!.category).map(([id,label])=><button key={id} aria-pressed={reasonAnswer.reason_tags.includes(id)} className={reasonAnswer.reason_tags.includes(id)?'selected':''} onClick={()=>{const tags=reasonAnswer.reason_tags.includes(id)?reasonAnswer.reason_tags.filter(t=>t!==id):[...reasonAnswer.reason_tags,id];commit(rate(session,reasonIndex,reasonAnswer.rating,reasonAnswer.status,tags));}}>{label}</button>)}</div><button className="primary" onClick={()=>setReasonIndex(null)}>记好啦，继续玩</button><p className="fine-print">选不选都可以，答案已经保存。</p></>}
     </section></div>}
   </>;

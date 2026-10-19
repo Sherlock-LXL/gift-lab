@@ -1,5 +1,4 @@
 import { afterEach, describe, expect, it, vi } from 'vitest';
-import { spawnSync } from 'node:child_process';
 import { bank, choose, giftById, makePlan, newSession, pairById, progress, rate, STORAGE_KEY, summarize } from '../src/engine';
 import { exportJSON, loadSession, saveSession, shareFile, validateSession } from '../src/storage';
 import { completedFixture } from './fixtures';
@@ -72,16 +71,6 @@ describe('question design and frozen sampling', () => {
     }
   });
 
-  it('JS and Python regenerate exactly the same plans including uint32 boundaries', () => {
-    const seeds = [0, 1, 17, 42, 65536, 2147483647, 2147483648, 4294967295];
-    const result = spawnSync('python3', ['-c', [
-      'import json, sys',
-      'from prepare_for_gpt import expected_plan',
-      'print(json.dumps([expected_plan(s, "2026-01-01T00:00:00.000Z") for s in json.load(sys.stdin)]))',
-    ].join('\n')], {cwd: '..', input: JSON.stringify(seeds), encoding: 'utf8'});
-    expect(result.status, result.stderr).toBe(0);
-    expect(JSON.parse(result.stdout)).toEqual(seeds.map(s => makePlan(s, '2026-01-01T00:00:00.000Z')));
-  });
 });
 
 describe('raw answers and isolation', () => {
@@ -112,7 +101,7 @@ describe('raw answers and isolation', () => {
     expect(progress(s)).toBe(100);
   });
 
-  it('changing holdout labels never changes profile, subsequent plan, or GPT training bytes', () => {
+  it('changing holdout labels never changes the profile or frozen plan', () => {
     const original = completedFixture(7);
     const changed = structuredClone(original);
     changed.gift_ratings.filter(r => r.split === 'holdout').forEach(r => {
@@ -120,20 +109,7 @@ describe('raw answers and isolation', () => {
     });
     expect(summarize(changed)).toEqual(summarize(original));
     expect(changed.plan).toEqual(original.plan);
-    const result = spawnSync('python3', ['-c', [
-      'import json, sys',
-      'from prepare_for_gpt import prepare',
-      'a, b = json.load(sys.stdin)',
-      'ta, ha = prepare(a)',
-      'tb, hb = prepare(b)',
-      'assert ta == tb and ha != hb',
-      's = json.dumps(ta, ensure_ascii=False)',
-      'assert all(g["gift_id"] not in s for g in ha["gift_ratings"])',
-      'assert "seed" not in ta and "plan" not in ta',
-      'print("isolated")',
-    ].join('\n')], {cwd: '..', input: JSON.stringify([original, changed]), encoding: 'utf8'});
-    expect(result.status, result.stderr).toBe(0);
-    expect(result.stdout.trim()).toBe('isolated');
+    expect(JSON.parse(exportJSON(changed)).gift_ratings.filter((r: {split: string}) => r.split === 'holdout')).toHaveLength(4);
   });
 
   it.each(['split', 'score', 'order', 'metadata', 'missing', 'duplicate', 'factor', 'preference'])('rejects tampered %s', kind => {

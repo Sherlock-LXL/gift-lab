@@ -1,0 +1,16 @@
+node_modules/
+dist/
+*.tsbuildinfo
+test-results/
+coverage/
+.DS_Store
+.env
+.env.*
+
+# Player exports and derived preference data must never be committed.
+private/
+gift-lab-*.json
+train_for_gpt.json
+holdout_private.json
+raw_session*.json
+synthetic_candidates*.json

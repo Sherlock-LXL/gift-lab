@@ -1,0 +1,5582 @@
+{
+  "version": "1.0",
+  "categories": [
+    "首饰配饰",
+    "周边收藏",
+    "书籍文创",
+    "电子影像",
+    "美妆香氛",
+    "包袋服饰",
+    "生活日用"
+  ],
+  "known_interest_basis": "游戏作者给出的主题假设：猫咪、音乐、手工、美食、旅行；并非玩家已确认偏好。",
+  "price_note": "人民币示意区间；成对问题是明确条件下的假设商品，不是购买链接或真实报价。",
+  "gifts": [
+    {
+      "id": "g101",
+      "family_id": "earclip",
+      "name": "银色小圆环耳夹",
+      "category": "首饰配饰",
+      "price_cny": [
+        48,
+        72
+      ],
+      "description": "不用耳洞，也能戴的一对小耳夹",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "装饰"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "佩戴舒适度"
+      ],
+      "storage": "小巧",
+      "use_frequency": "偶尔",
+      "icon": "💍",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g102",
+      "family_id": "necklace",
+      "name": "细链珍珠项链",
+      "category": "首饰配饰",
+      "price_cny": [
+        144,
+        216
+      ],
+      "description": "一颗小珍珠，搭配日常衣服",
+      "style_tags": [
+        "精致漂亮"
+      ],
+      "function_tags": [
+        "装饰"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "材质过敏"
+      ],
+      "storage": "小巧",
+      "use_frequency": "偶尔",
+      "icon": "📿",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g103",
+      "family_id": "bracelet",
+      "name": "蓝色玻璃手链",
+      "category": "首饰配饰",
+      "price_cny": [
+        40,
+        60
+      ],
+      "description": "透亮的蓝色玻璃珠手链",
+      "style_tags": [
+        "有设计感"
+      ],
+      "function_tags": [
+        "装饰"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "手围"
+      ],
+      "storage": "小巧",
+      "use_frequency": "偶尔",
+      "icon": "📿",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g104",
+      "family_id": "ring",
+      "name": "黑色金属戒指",
+      "category": "首饰配饰",
+      "price_cny": [
+        72,
+        108
+      ],
+      "description": "线条利落的黑色开口戒指",
+      "style_tags": [
+        "酷酷的"
+      ],
+      "function_tags": [
+        "装饰"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "戒围"
+      ],
+      "storage": "小巧",
+      "use_frequency": "偶尔",
+      "icon": "💍",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g105",
+      "family_id": "brooch",
+      "name": "复古花朵胸针",
+      "category": "首饰配饰",
+      "price_cny": [
+        32,
+        48
+      ],
+      "description": "可以别在外套上的小花胸针",
+      "style_tags": [
+        "复古文艺"
+      ],
+      "function_tags": [
+        "装饰"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "偶尔",
+      "icon": "🌸",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g106",
+      "family_id": "hairclip",
+      "name": "丝绒蝴蝶结发夹",
+      "category": "首饰配饰",
+      "price_cny": [
+        24,
+        36
+      ],
+      "description": "扎头发时可以用的柔软发夹",
+      "style_tags": [
+        "可可爱爱"
+      ],
+      "function_tags": [
+        "整理头发"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "发量"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🎀",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g107",
+      "family_id": "scarf",
+      "name": "真丝印花小方巾",
+      "category": "首饰配饰",
+      "price_cny": [
+        176,
+        264
+      ],
+      "description": "系在脖子或包上的印花方巾",
+      "style_tags": [
+        "精致漂亮"
+      ],
+      "function_tags": [
+        "搭配"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "可折叠",
+      "use_frequency": "经常",
+      "icon": "🧣",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g108",
+      "family_id": "watch",
+      "name": "极简皮带手表",
+      "category": "首饰配饰",
+      "price_cny": [
+        360,
+        540
+      ],
+      "description": "白色表盘，棕色皮质表带",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "看时间"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "腕围"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "⌚",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g109",
+      "family_id": "keyring",
+      "name": "猫爪钥匙扣",
+      "category": "首饰配饰",
+      "price_cny": [
+        28,
+        42
+      ],
+      "description": "一只软软的小猫爪挂在钥匙上",
+      "style_tags": [
+        "可可爱爱"
+      ],
+      "function_tags": [
+        "整理钥匙"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🐾",
+      "audience": "personalized",
+      "interest_tags": [
+        "猫咪"
+      ],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g110",
+      "family_id": "pin",
+      "name": "音符珐琅别针",
+      "category": "首饰配饰",
+      "price_cny": [
+        36,
+        54
+      ],
+      "description": "一枚小小音符，可以别在包上",
+      "style_tags": [
+        "有设计感"
+      ],
+      "function_tags": [
+        "装饰"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "偶尔",
+      "icon": "🎵",
+      "audience": "personalized",
+      "interest_tags": [
+        "音乐"
+      ],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g111",
+      "family_id": "beading",
+      "name": "手工串珠手绳",
+      "category": "首饰配饰",
+      "price_cny": [
+        52,
+        78
+      ],
+      "description": "自己搭配颜色的串珠材料包",
+      "style_tags": [
+        "有趣搞怪"
+      ],
+      "function_tags": [
+        "手作"
+      ],
+      "scenario": "空闲时慢慢完成",
+      "selection_risks": [
+        "需要动手"
+      ],
+      "storage": "小巧",
+      "use_frequency": "偶尔",
+      "icon": "📿",
+      "audience": "personalized",
+      "interest_tags": [
+        "手工"
+      ],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g112",
+      "family_id": "luggage-tag",
+      "name": "地图行李牌",
+      "category": "首饰配饰",
+      "price_cny": [
+        32,
+        48
+      ],
+      "description": "旅行时挂在箱子上的地图行李牌",
+      "style_tags": [
+        "复古文艺"
+      ],
+      "function_tags": [
+        "辨认行李"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🧳",
+      "audience": "personalized",
+      "interest_tags": [
+        "旅行"
+      ],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g113",
+      "family_id": "collar-pin",
+      "name": "不锈钢领针",
+      "category": "首饰配饰",
+      "price_cny": [
+        64,
+        96
+      ],
+      "description": "一枚细长银色领针，适合衬衫",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "装饰"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "衣服搭配"
+      ],
+      "storage": "小巧",
+      "use_frequency": "偶尔",
+      "icon": "✨",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g114",
+      "family_id": "anklet",
+      "name": "金色脚链",
+      "category": "首饰配饰",
+      "price_cny": [
+        80,
+        120
+      ],
+      "description": "夏天搭配凉鞋的细脚链",
+      "style_tags": [
+        "精致漂亮"
+      ],
+      "function_tags": [
+        "装饰"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "脚围"
+      ],
+      "storage": "小巧",
+      "use_frequency": "偶尔",
+      "icon": "📿",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g115",
+      "family_id": "headband",
+      "name": "运动发带",
+      "category": "首饰配饰",
+      "price_cny": [
+        20,
+        30
+      ],
+      "description": "运动时固定头发的弹力发带",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "运动"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "头围"
+      ],
+      "storage": "可折叠",
+      "use_frequency": "经常",
+      "icon": "🎽",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g116",
+      "family_id": "wool-charm",
+      "name": "羊毛贝雷帽胸饰",
+      "category": "首饰配饰",
+      "price_cny": [
+        44,
+        66
+      ],
+      "description": "可以拆下的小羊毛装饰",
+      "style_tags": [
+        "可可爱爱"
+      ],
+      "function_tags": [
+        "装饰"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "偶尔",
+      "icon": "🌼",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g201",
+      "family_id": "plush",
+      "name": "小熊毛绒玩偶",
+      "category": "周边收藏",
+      "price_cny": [
+        64,
+        96
+      ],
+      "description": "一只可以抱着的三十厘米小熊",
+      "style_tags": [
+        "可可爱爱"
+      ],
+      "function_tags": [
+        "陪伴"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "中等",
+      "use_frequency": "经常",
+      "icon": "🧸",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g202",
+      "family_id": "brick-flower",
+      "name": "积木花束",
+      "category": "周边收藏",
+      "price_cny": [
+        120,
+        180
+      ],
+      "description": "需要自己拼搭的彩色积木花",
+      "style_tags": [
+        "有设计感"
+      ],
+      "function_tags": [
+        "手作"
+      ],
+      "scenario": "空闲时慢慢完成",
+      "selection_risks": [
+        "需要动手"
+      ],
+      "storage": "中等",
+      "use_frequency": "偶尔",
+      "icon": "💐",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g203",
+      "family_id": "display-box",
+      "name": "透明亚克力展示盒",
+      "category": "周边收藏",
+      "price_cny": [
+        72,
+        108
+      ],
+      "description": "可以摆放小收藏的透明盒子",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "收纳"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "尺寸"
+      ],
+      "storage": "中等",
+      "use_frequency": "经常",
+      "icon": "📦",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g204",
+      "family_id": "music-box",
+      "name": "迷你旋转木马音乐盒",
+      "category": "周边收藏",
+      "price_cny": [
+        128,
+        192
+      ],
+      "description": "拧一下，就会转动并响起音乐",
+      "style_tags": [
+        "复古文艺"
+      ],
+      "function_tags": [
+        "欣赏"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "中等",
+      "use_frequency": "经常",
+      "icon": "🎠",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g205",
+      "family_id": "giant-goose",
+      "name": "大号落地毛绒鹅",
+      "category": "周边收藏",
+      "price_cny": [
+        208,
+        312
+      ],
+      "description": "长约一米，适合抱着的大鹅",
+      "style_tags": [
+        "有趣搞怪"
+      ],
+      "function_tags": [
+        "陪伴"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "占地方",
+      "use_frequency": "经常",
+      "icon": "🪿",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g206",
+      "family_id": "magnet",
+      "name": "博物馆冰箱贴套装",
+      "category": "周边收藏",
+      "price_cny": [
+        48,
+        72
+      ],
+      "description": "三枚不同建筑造型的冰箱贴",
+      "style_tags": [
+        "复古文艺"
+      ],
+      "function_tags": [
+        "装饰"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "磁性表面"
+      ],
+      "storage": "小巧",
+      "use_frequency": "偶尔",
+      "icon": "🏛️",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g207",
+      "family_id": "ornament",
+      "name": "小巧星球摆件",
+      "category": "周边收藏",
+      "price_cny": [
+        60,
+        90
+      ],
+      "description": "桌面上一颗透明的小星球",
+      "style_tags": [
+        "有设计感"
+      ],
+      "function_tags": [
+        "装饰"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "偶尔",
+      "icon": "🪐",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g208",
+      "family_id": "puzzle",
+      "name": "拼图一千片",
+      "category": "周边收藏",
+      "price_cny": [
+        80,
+        120
+      ],
+      "description": "一幅需要慢慢完成的风景拼图",
+      "style_tags": [
+        "复古文艺"
+      ],
+      "function_tags": [
+        "消遣"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "需要耐心"
+      ],
+      "storage": "中等",
+      "use_frequency": "偶尔",
+      "icon": "🧩",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g209",
+      "family_id": "cat-plush",
+      "name": "趴着的猫咪玩偶",
+      "category": "周边收藏",
+      "price_cny": [
+        76,
+        114
+      ],
+      "description": "一只可以放在桌边的软软小猫",
+      "style_tags": [
+        "可可爱爱"
+      ],
+      "function_tags": [
+        "陪伴"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "中等",
+      "use_frequency": "经常",
+      "icon": "🐈",
+      "audience": "personalized",
+      "interest_tags": [
+        "猫咪"
+      ],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g210",
+      "family_id": "ticket-album",
+      "name": "演出纪念票收纳册",
+      "category": "周边收藏",
+      "price_cny": [
+        44,
+        66
+      ],
+      "description": "把看过的演出票整整齐齐收起来",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "纪念"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "偶尔",
+      "icon": "🎟️",
+      "audience": "personalized",
+      "interest_tags": [
+        "音乐"
+      ],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g211",
+      "family_id": "felt-kit",
+      "name": "羊毛毡小动物材料包",
+      "category": "周边收藏",
+      "price_cny": [
+        56,
+        84
+      ],
+      "description": "用羊毛和戳针做一只小动物",
+      "style_tags": [
+        "可可爱爱"
+      ],
+      "function_tags": [
+        "手作"
+      ],
+      "scenario": "空闲时慢慢完成",
+      "selection_risks": [
+        "需要动手"
+      ],
+      "storage": "小巧",
+      "use_frequency": "偶尔",
+      "icon": "🧶",
+      "audience": "personalized",
+      "interest_tags": [
+        "手工"
+      ],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g212",
+      "family_id": "city-model",
+      "name": "旅行城市微缩模型",
+      "category": "周边收藏",
+      "price_cny": [
+        96,
+        144
+      ],
+      "description": "一座放在书架上的城市小模型",
+      "style_tags": [
+        "复古文艺"
+      ],
+      "function_tags": [
+        "纪念"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "中等",
+      "use_frequency": "偶尔",
+      "icon": "🏙️",
+      "audience": "personalized",
+      "interest_tags": [
+        "旅行"
+      ],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g213",
+      "family_id": "dinosaur",
+      "name": "树脂恐龙化石模型",
+      "category": "周边收藏",
+      "price_cny": [
+        104,
+        156
+      ],
+      "description": "可以摆在书桌上的小恐龙骨架",
+      "style_tags": [
+        "酷酷的"
+      ],
+      "function_tags": [
+        "欣赏"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "中等",
+      "use_frequency": "经常",
+      "icon": "🦕",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g214",
+      "family_id": "hourglass",
+      "name": "透明沙漏",
+      "category": "周边收藏",
+      "price_cny": [
+        36,
+        54
+      ],
+      "description": "一个能流动五分钟的沙漏",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "计时"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "易碎"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "⌛",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g215",
+      "family_id": "blindbox",
+      "name": "随机角色盲盒",
+      "category": "周边收藏",
+      "price_cny": [
+        55,
+        83
+      ],
+      "description": "打开前不知道会是哪一个角色",
+      "style_tags": [
+        "可可爱爱"
+      ],
+      "function_tags": [
+        "惊喜"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "角色随机"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🎁",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g216",
+      "family_id": "chess",
+      "name": "木质国际象棋",
+      "category": "周边收藏",
+      "price_cny": [
+        144,
+        216
+      ],
+      "description": "一套可以双人玩的木棋盘",
+      "style_tags": [
+        "复古文艺"
+      ],
+      "function_tags": [
+        "消遣"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "需要了解规则"
+      ],
+      "storage": "中等",
+      "use_frequency": "偶尔",
+      "icon": "♟️",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g301",
+      "family_id": "notebook",
+      "name": "硬壳横线笔记本",
+      "category": "书籍文创",
+      "price_cny": [
+        36,
+        54
+      ],
+      "description": "纸张厚实，适合日常随手记",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "记录"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "📓",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g302",
+      "family_id": "postcard",
+      "name": "植物插画明信片",
+      "category": "书籍文创",
+      "price_cny": [
+        28,
+        42
+      ],
+      "description": "十二张可以寄出或贴墙的明信片",
+      "style_tags": [
+        "复古文艺"
+      ],
+      "function_tags": [
+        "记录"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "💌",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g303",
+      "family_id": "novel",
+      "name": "短篇小说集",
+      "category": "书籍文创",
+      "price_cny": [
+        48,
+        72
+      ],
+      "description": "适合睡前翻几页的短篇故事",
+      "style_tags": [
+        "复古文艺"
+      ],
+      "function_tags": [
+        "阅读"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "阅读口味"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "📕",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g304",
+      "family_id": "pen",
+      "name": "黑色钢笔礼盒",
+      "category": "书籍文创",
+      "price_cny": [
+        192,
+        288
+      ],
+      "description": "一支钢笔和一瓶墨水",
+      "style_tags": [
+        "精致漂亮"
+      ],
+      "function_tags": [
+        "书写"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "握笔习惯"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🖋️",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g305",
+      "family_id": "planner",
+      "name": "桌面每日计划本",
+      "category": "书籍文创",
+      "price_cny": [
+        32,
+        48
+      ],
+      "description": "把每天想做的事情写在一页上",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "记录"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "📒",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g306",
+      "family_id": "tape",
+      "name": "彩色和纸胶带",
+      "category": "书籍文创",
+      "price_cny": [
+        24,
+        36
+      ],
+      "description": "六卷可以装饰手账的图案胶带",
+      "style_tags": [
+        "可可爱爱"
+      ],
+      "function_tags": [
+        "装饰"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "偶尔",
+      "icon": "🎀",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g307",
+      "family_id": "photo-book",
+      "name": "世界摄影大画册",
+      "category": "书籍文创",
+      "price_cny": [
+        224,
+        336
+      ],
+      "description": "一本厚厚的彩色风景摄影集",
+      "style_tags": [
+        "有设计感"
+      ],
+      "function_tags": [
+        "阅读"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "占地方",
+      "use_frequency": "经常",
+      "icon": "📸",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g308",
+      "family_id": "bookmark",
+      "name": "磁吸书签套装",
+      "category": "书籍文创",
+      "price_cny": [
+        20,
+        30
+      ],
+      "description": "四枚不容易从书页滑落的小书签",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "阅读"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🔖",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g309",
+      "family_id": "cat-sticker",
+      "name": "猫咪贴纸包",
+      "category": "书籍文创",
+      "price_cny": [
+        16,
+        24
+      ],
+      "description": "可以贴在笔记本上的猫咪贴纸",
+      "style_tags": [
+        "可可爱爱"
+      ],
+      "function_tags": [
+        "装饰"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "偶尔",
+      "icon": "🐈",
+      "audience": "personalized",
+      "interest_tags": [
+        "猫咪"
+      ],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g310",
+      "family_id": "chord-book",
+      "name": "简单吉他和弦手册",
+      "category": "书籍文创",
+      "price_cny": [
+        44,
+        66
+      ],
+      "description": "适合练习时翻看的和弦小册子",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "学习"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "需要乐器"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🎸",
+      "audience": "personalized",
+      "interest_tags": [
+        "音乐"
+      ],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g311",
+      "family_id": "watercolor",
+      "name": "水彩入门套装",
+      "category": "书籍文创",
+      "price_cny": [
+        112,
+        168
+      ],
+      "description": "十二色水彩和一本练习小册",
+      "style_tags": [
+        "有设计感"
+      ],
+      "function_tags": [
+        "手作"
+      ],
+      "scenario": "空闲时慢慢完成",
+      "selection_risks": [
+        "需要动手"
+      ],
+      "storage": "中等",
+      "use_frequency": "偶尔",
+      "icon": "🎨",
+      "audience": "personalized",
+      "interest_tags": [
+        "手工"
+      ],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g312",
+      "family_id": "walk-guide",
+      "name": "城市散步地图册",
+      "category": "书籍文创",
+      "price_cny": [
+        64,
+        96
+      ],
+      "description": "按路线寻找街角小店和老建筑",
+      "style_tags": [
+        "复古文艺"
+      ],
+      "function_tags": [
+        "探索"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "城市适用性"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🗺️",
+      "audience": "personalized",
+      "interest_tags": [
+        "旅行"
+      ],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g313",
+      "family_id": "cookbook",
+      "name": "菜谱翻页小书",
+      "category": "书籍文创",
+      "price_cny": [
+        40,
+        60
+      ],
+      "description": "包含二十道容易做的家常菜",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "做饭"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🍳",
+      "audience": "personalized",
+      "interest_tags": [
+        "美食"
+      ],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g314",
+      "family_id": "calendar",
+      "name": "趣味冷知识日历",
+      "category": "书籍文创",
+      "price_cny": [
+        52,
+        78
+      ],
+      "description": "每天翻开一条小知识",
+      "style_tags": [
+        "有趣搞怪"
+      ],
+      "function_tags": [
+        "阅读"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "年份"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "📅",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g315",
+      "family_id": "pencil",
+      "name": "机械铅笔套装",
+      "category": "书籍文创",
+      "price_cny": [
+        68,
+        102
+      ],
+      "description": "一支自动铅笔和替换笔芯",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "书写"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "笔芯规格"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "✏️",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g316",
+      "family_id": "popup-card",
+      "name": "立体纸雕贺卡",
+      "category": "书籍文创",
+      "price_cny": [
+        28,
+        42
+      ],
+      "description": "打开会立起一座小花园的卡片",
+      "style_tags": [
+        "精致漂亮"
+      ],
+      "function_tags": [
+        "纪念"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "可折叠",
+      "use_frequency": "偶尔",
+      "icon": "💌",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g401",
+      "family_id": "earbuds",
+      "name": "白色半入耳蓝牙耳机",
+      "category": "电子影像",
+      "price_cny": [
+        200,
+        300
+      ],
+      "description": "通勤听歌用，附小巧充电盒",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "听歌"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "耳型",
+        "手机兼容"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🎧",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g402",
+      "family_id": "speaker",
+      "name": "便携蓝牙音箱",
+      "category": "电子影像",
+      "price_cny": [
+        144,
+        216
+      ],
+      "description": "可以放在书桌或带到户外的小音箱",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "听歌"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "蓝牙兼容"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🔊",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g403",
+      "family_id": "instant-camera",
+      "name": "拍立得相机",
+      "category": "电子影像",
+      "price_cny": [
+        520,
+        780
+      ],
+      "description": "按下快门，就能得到一张小照片",
+      "style_tags": [
+        "复古文艺"
+      ],
+      "function_tags": [
+        "拍照"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "耗材成本"
+      ],
+      "storage": "中等",
+      "use_frequency": "偶尔",
+      "icon": "📷",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g404",
+      "family_id": "phone-stand",
+      "name": "手机支架",
+      "category": "电子影像",
+      "price_cny": [
+        32,
+        48
+      ],
+      "description": "角度可以调整的桌面支架",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "支撑手机"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "设备尺寸"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "📱",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g405",
+      "family_id": "keyboard",
+      "name": "机械键盘",
+      "category": "电子影像",
+      "price_cny": [
+        320,
+        480
+      ],
+      "description": "按键有清晰手感的桌面键盘",
+      "style_tags": [
+        "酷酷的"
+      ],
+      "function_tags": [
+        "输入"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "接口",
+        "轴体偏好"
+      ],
+      "storage": "中等",
+      "use_frequency": "经常",
+      "icon": "⌨️",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g406",
+      "family_id": "photo-printer",
+      "name": "迷你照片打印机",
+      "category": "电子影像",
+      "price_cny": [
+        400,
+        600
+      ],
+      "description": "把手机里的照片打印成小纸片",
+      "style_tags": [
+        "可可爱爱"
+      ],
+      "function_tags": [
+        "打印"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "手机兼容",
+        "耗材"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🖨️",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g407",
+      "family_id": "powerbank",
+      "name": "大容量充电宝",
+      "category": "电子影像",
+      "price_cny": [
+        120,
+        180
+      ],
+      "description": "外出时给手机补电的充电宝",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "充电"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "接口"
+      ],
+      "storage": "中等",
+      "use_frequency": "经常",
+      "icon": "🔋",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g408",
+      "family_id": "ereader",
+      "name": "电子阅读器",
+      "category": "电子影像",
+      "price_cny": [
+        720,
+        1080
+      ],
+      "description": "用来读电子书的黑白墨水屏",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "阅读"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "书籍格式"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "📖",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g409",
+      "family_id": "cat-headset",
+      "name": "猫耳有线耳机",
+      "category": "电子影像",
+      "price_cny": [
+        96,
+        144
+      ],
+      "description": "带小猫耳朵装饰的头戴耳机",
+      "style_tags": [
+        "可可爱爱"
+      ],
+      "function_tags": [
+        "听歌"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "接口",
+        "头围"
+      ],
+      "storage": "中等",
+      "use_frequency": "经常",
+      "icon": "🎧",
+      "audience": "personalized",
+      "interest_tags": [
+        "猫咪"
+      ],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g410",
+      "family_id": "synth",
+      "name": "入门口袋合成器",
+      "category": "电子影像",
+      "price_cny": [
+        240,
+        360
+      ],
+      "description": "可以随手编一段小旋律",
+      "style_tags": [
+        "酷酷的"
+      ],
+      "function_tags": [
+        "创作音乐"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "学习成本"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🎹",
+      "audience": "personalized",
+      "interest_tags": [
+        "音乐"
+      ],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g411",
+      "family_id": "macro-lens",
+      "name": "手机微距镜头夹",
+      "category": "电子影像",
+      "price_cny": [
+        76,
+        114
+      ],
+      "description": "夹在手机上拍食物或小细节",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "拍照"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "镜头位置兼容"
+      ],
+      "storage": "小巧",
+      "use_frequency": "偶尔",
+      "icon": "📷",
+      "audience": "personalized",
+      "interest_tags": [
+        "美食"
+      ],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g412",
+      "family_id": "luggage-scale",
+      "name": "便携行李电子秤",
+      "category": "电子影像",
+      "price_cny": [
+        48,
+        72
+      ],
+      "description": "出发前称一称行李有多重",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "称重"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🧳",
+      "audience": "personalized",
+      "interest_tags": [
+        "旅行"
+      ],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g413",
+      "family_id": "clock",
+      "name": "桌面电子时钟",
+      "category": "电子影像",
+      "price_cny": [
+        60,
+        90
+      ],
+      "description": "显示时间和温度的数字时钟",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "看时间"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "供电方式"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🕰️",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g414",
+      "family_id": "fitness-band",
+      "name": "运动手环",
+      "category": "电子影像",
+      "price_cny": [
+        176,
+        264
+      ],
+      "description": "记录日常步数和运动时长",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "运动"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "腕围",
+        "手机兼容"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "⌚",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g415",
+      "family_id": "fan",
+      "name": "USB桌面小风扇",
+      "category": "电子影像",
+      "price_cny": [
+        52,
+        78
+      ],
+      "description": "放在桌角吹一点凉风",
+      "style_tags": [
+        "可可爱爱"
+      ],
+      "function_tags": [
+        "降温"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "USB供电"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🌀",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g416",
+      "family_id": "selfie-light",
+      "name": "柔光自拍补光灯",
+      "category": "电子影像",
+      "price_cny": [
+        68,
+        102
+      ],
+      "description": "夹在手机上拍照时补光",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "拍照"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "手机厚度"
+      ],
+      "storage": "小巧",
+      "use_frequency": "偶尔",
+      "icon": "💡",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g501",
+      "family_id": "solid-perfume",
+      "name": "淡茶香固体香膏",
+      "category": "美妆香氛",
+      "price_cny": [
+        64,
+        96
+      ],
+      "description": "装在小盒里，出门可以随手带",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "香氛"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "气味",
+        "过敏"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🌷",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g502",
+      "family_id": "handcream",
+      "name": "无香护手霜",
+      "category": "美妆香氛",
+      "price_cny": [
+        40,
+        60
+      ],
+      "description": "洗手后可以用的便携护手霜",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "护理"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "肤质过敏"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🧴",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g503",
+      "family_id": "perfume",
+      "name": "花香香水小样套装",
+      "category": "美妆香氛",
+      "price_cny": [
+        144,
+        216
+      ],
+      "description": "五支不同花香的小瓶香水",
+      "style_tags": [
+        "精致漂亮"
+      ],
+      "function_tags": [
+        "香氛"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "气味",
+        "过敏"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🌸",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g504",
+      "family_id": "mirror",
+      "name": "小巧随身化妆镜",
+      "category": "美妆香氛",
+      "price_cny": [
+        48,
+        72
+      ],
+      "description": "可以折起放进包里的小镜子",
+      "style_tags": [
+        "精致漂亮"
+      ],
+      "function_tags": [
+        "整理仪容"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🪞",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g505",
+      "family_id": "lipstick",
+      "name": "暖色口红",
+      "category": "美妆香氛",
+      "price_cny": [
+        176,
+        264
+      ],
+      "description": "一支偏暖色的日常口红",
+      "style_tags": [
+        "精致漂亮"
+      ],
+      "function_tags": [
+        "化妆"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "色号",
+        "肤质"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "💄",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g506",
+      "family_id": "bath-salt",
+      "name": "浴盐礼盒",
+      "category": "美妆香氛",
+      "price_cny": [
+        76,
+        114
+      ],
+      "description": "三小袋不同气味的泡澡浴盐",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "放松"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "浴缸",
+        "过敏"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🛁",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g507",
+      "family_id": "candle",
+      "name": "香薰蜡烛",
+      "category": "美妆香氛",
+      "price_cny": [
+        104,
+        156
+      ],
+      "description": "玻璃杯里的木质香蜡烛",
+      "style_tags": [
+        "复古文艺"
+      ],
+      "function_tags": [
+        "香氛"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "明火",
+        "气味"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🕯️",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g508",
+      "family_id": "mask",
+      "name": "基础保湿面膜",
+      "category": "美妆香氛",
+      "price_cny": [
+        80,
+        120
+      ],
+      "description": "五片独立包装的保湿面膜",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "护理"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "肤质过敏"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🧖",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g509",
+      "family_id": "cat-aroma",
+      "name": "猫咪香薰石",
+      "category": "美妆香氛",
+      "price_cny": [
+        44,
+        66
+      ],
+      "description": "滴入香油后放在桌边的小猫石膏",
+      "style_tags": [
+        "可可爱爱"
+      ],
+      "function_tags": [
+        "香氛"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "气味"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🐈",
+      "audience": "personalized",
+      "interest_tags": [
+        "猫咪"
+      ],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g510",
+      "family_id": "soap-kit",
+      "name": "手工皂制作材料包",
+      "category": "美妆香氛",
+      "price_cny": [
+        72,
+        108
+      ],
+      "description": "可以自己做两块小肥皂",
+      "style_tags": [
+        "有设计感"
+      ],
+      "function_tags": [
+        "手作"
+      ],
+      "scenario": "空闲时慢慢完成",
+      "selection_risks": [
+        "需要动手",
+        "过敏"
+      ],
+      "storage": "小巧",
+      "use_frequency": "偶尔",
+      "icon": "🧼",
+      "audience": "personalized",
+      "interest_tags": [
+        "手工"
+      ],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g511",
+      "family_id": "orange-spray",
+      "name": "甜橙香氛喷雾",
+      "category": "美妆香氛",
+      "price_cny": [
+        56,
+        84
+      ],
+      "description": "带一点甜橙气味的房间喷雾",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "香氛"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "气味过敏"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🍊",
+      "audience": "personalized",
+      "interest_tags": [
+        "美食"
+      ],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g512",
+      "family_id": "travel-bottle",
+      "name": "旅行洗漱分装瓶",
+      "category": "美妆香氛",
+      "price_cny": [
+        36,
+        54
+      ],
+      "description": "一组防漏的小瓶子和收纳袋",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "收纳"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🧴",
+      "audience": "personalized",
+      "interest_tags": [
+        "旅行"
+      ],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g513",
+      "family_id": "scalp-brush",
+      "name": "头皮按摩梳",
+      "category": "美妆香氛",
+      "price_cny": [
+        32,
+        48
+      ],
+      "description": "洗头时可以轻轻按摩的软梳",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "护理"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "头皮敏感"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🪮",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g514",
+      "family_id": "nail-polish",
+      "name": "彩色指甲油套装",
+      "category": "美妆香氛",
+      "price_cny": [
+        88,
+        132
+      ],
+      "description": "三瓶适合搭配的不同颜色指甲油",
+      "style_tags": [
+        "有设计感"
+      ],
+      "function_tags": [
+        "化妆"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "气味过敏"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "💅",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g515",
+      "family_id": "face-device",
+      "name": "电动洁面仪",
+      "category": "美妆香氛",
+      "price_cny": [
+        280,
+        420
+      ],
+      "description": "可调档位的硅胶洁面仪",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "护理"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "肤质",
+        "充电"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🧴",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g516",
+      "family_id": "eye-mask",
+      "name": "缎面睡眠眼罩",
+      "category": "美妆香氛",
+      "price_cny": [
+        52,
+        78
+      ],
+      "description": "遮光用的柔软眼罩",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "睡眠"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "头围"
+      ],
+      "storage": "可折叠",
+      "use_frequency": "经常",
+      "icon": "🌙",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g601",
+      "family_id": "tote",
+      "name": "帆布通勤托特包",
+      "category": "包袋服饰",
+      "price_cny": [
+        80,
+        120
+      ],
+      "description": "可以放水杯和书的布包",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "收纳"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "可折叠",
+      "use_frequency": "经常",
+      "icon": "👜",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g602",
+      "family_id": "crossbody",
+      "name": "小号皮质斜挎包",
+      "category": "包袋服饰",
+      "price_cny": [
+        360,
+        540
+      ],
+      "description": "出门装手机和钥匙的小包",
+      "style_tags": [
+        "精致漂亮"
+      ],
+      "function_tags": [
+        "收纳"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "肩带长度"
+      ],
+      "storage": "中等",
+      "use_frequency": "经常",
+      "icon": "👜",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g603",
+      "family_id": "tshirt",
+      "name": "纯色棉质短袖",
+      "category": "包袋服饰",
+      "price_cny": [
+        72,
+        108
+      ],
+      "description": "一件宽松的纯色短袖",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "穿着"
+      ],
+      "scenario": "出门或日常穿搭",
+      "selection_risks": [
+        "衣服尺码"
+      ],
+      "storage": "可折叠",
+      "use_frequency": "经常",
+      "icon": "👕",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g604",
+      "family_id": "winter-scarf",
+      "name": "厚实羊毛围巾",
+      "category": "包袋服饰",
+      "price_cny": [
+        208,
+        312
+      ],
+      "description": "冬天围在脖子上的柔软围巾",
+      "style_tags": [
+        "复古文艺"
+      ],
+      "function_tags": [
+        "保暖"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "材质过敏"
+      ],
+      "storage": "可折叠",
+      "use_frequency": "经常",
+      "icon": "🧣",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g605",
+      "family_id": "cap",
+      "name": "刺绣棒球帽",
+      "category": "包袋服饰",
+      "price_cny": [
+        64,
+        96
+      ],
+      "description": "帽檐带有小图案的遮阳帽",
+      "style_tags": [
+        "酷酷的"
+      ],
+      "function_tags": [
+        "遮阳"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "头围"
+      ],
+      "storage": "中等",
+      "use_frequency": "经常",
+      "icon": "🧢",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g606",
+      "family_id": "backpack",
+      "name": "轻便运动背包",
+      "category": "包袋服饰",
+      "price_cny": [
+        176,
+        264
+      ],
+      "description": "有多个收纳袋的双肩包",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "收纳"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "背负尺寸"
+      ],
+      "storage": "中等",
+      "use_frequency": "经常",
+      "icon": "🎒",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g607",
+      "family_id": "slippers",
+      "name": "毛绒居家拖鞋",
+      "category": "包袋服饰",
+      "price_cny": [
+        52,
+        78
+      ],
+      "description": "冬天在家穿的软拖鞋",
+      "style_tags": [
+        "可可爱爱"
+      ],
+      "function_tags": [
+        "穿着"
+      ],
+      "scenario": "出门或日常穿搭",
+      "selection_risks": [
+        "鞋码"
+      ],
+      "storage": "中等",
+      "use_frequency": "经常",
+      "icon": "🥿",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g608",
+      "family_id": "coin-purse",
+      "name": "小格纹零钱包",
+      "category": "包袋服饰",
+      "price_cny": [
+        40,
+        60
+      ],
+      "description": "可以装硬币和耳机的小包",
+      "style_tags": [
+        "复古文艺"
+      ],
+      "function_tags": [
+        "收纳"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "👝",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g609",
+      "family_id": "cat-socks",
+      "name": "猫咪刺绣棉袜",
+      "category": "包袋服饰",
+      "price_cny": [
+        28,
+        42
+      ],
+      "description": "袜口绣着小猫的一双棉袜",
+      "style_tags": [
+        "可可爱爱"
+      ],
+      "function_tags": [
+        "穿着"
+      ],
+      "scenario": "出门或日常穿搭",
+      "selection_risks": [
+        "脚码"
+      ],
+      "storage": "可折叠",
+      "use_frequency": "经常",
+      "icon": "🧦",
+      "audience": "personalized",
+      "interest_tags": [
+        "猫咪"
+      ],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g610",
+      "family_id": "record-bag",
+      "name": "唱片图案帆布袋",
+      "category": "包袋服饰",
+      "price_cny": [
+        60,
+        90
+      ],
+      "description": "印有复古唱片图案的轻便布袋",
+      "style_tags": [
+        "复古文艺"
+      ],
+      "function_tags": [
+        "收纳"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "可折叠",
+      "use_frequency": "经常",
+      "icon": "👜",
+      "audience": "personalized",
+      "interest_tags": [
+        "音乐"
+      ],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g611",
+      "family_id": "crochet-bag",
+      "name": "编织小包材料包",
+      "category": "包袋服饰",
+      "price_cny": [
+        88,
+        132
+      ],
+      "description": "包含棉线、钩针和图解的材料包",
+      "style_tags": [
+        "复古文艺"
+      ],
+      "function_tags": [
+        "手作"
+      ],
+      "scenario": "空闲时慢慢完成",
+      "selection_risks": [
+        "需要动手"
+      ],
+      "storage": "小巧",
+      "use_frequency": "偶尔",
+      "icon": "🧶",
+      "audience": "personalized",
+      "interest_tags": [
+        "手工"
+      ],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g612",
+      "family_id": "packing-cube",
+      "name": "旅行衣物收纳袋",
+      "category": "包袋服饰",
+      "price_cny": [
+        56,
+        84
+      ],
+      "description": "大小不同的三只拉链收纳袋",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "收纳"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "可折叠",
+      "use_frequency": "经常",
+      "icon": "🧳",
+      "audience": "personalized",
+      "interest_tags": [
+        "旅行"
+      ],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g613",
+      "family_id": "raincoat",
+      "name": "长款雨衣",
+      "category": "包袋服饰",
+      "price_cny": [
+        80,
+        120
+      ],
+      "description": "下雨天可以收进袋里的雨衣",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "防雨"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "衣服尺码"
+      ],
+      "storage": "可折叠",
+      "use_frequency": "经常",
+      "icon": "🌧️",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g614",
+      "family_id": "blazer",
+      "name": "绒面西装外套",
+      "category": "包袋服饰",
+      "price_cny": [
+        400,
+        600
+      ],
+      "description": "一件需要搭配尺码的休闲外套",
+      "style_tags": [
+        "精致漂亮"
+      ],
+      "function_tags": [
+        "穿着"
+      ],
+      "scenario": "出门或日常穿搭",
+      "selection_risks": [
+        "衣服尺码"
+      ],
+      "storage": "中等",
+      "use_frequency": "经常",
+      "icon": "🧥",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g615",
+      "family_id": "running-belt",
+      "name": "轻便跑步腰包",
+      "category": "包袋服饰",
+      "price_cny": [
+        44,
+        66
+      ],
+      "description": "跑步时可以贴身装手机",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "运动"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "腰围"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🏃",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g616",
+      "family_id": "shawl",
+      "name": "针织披肩",
+      "category": "包袋服饰",
+      "price_cny": [
+        128,
+        192
+      ],
+      "description": "空调房里可以披上的针织披肩",
+      "style_tags": [
+        "复古文艺"
+      ],
+      "function_tags": [
+        "保暖"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "材质过敏"
+      ],
+      "storage": "可折叠",
+      "use_frequency": "经常",
+      "icon": "🧣",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g701",
+      "family_id": "mug",
+      "name": "纯色陶瓷杯",
+      "category": "生活日用",
+      "price_cny": [
+        52,
+        78
+      ],
+      "description": "三百毫升的日常喝水杯",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "喝水"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "易碎"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "☕",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g702",
+      "family_id": "nightlight",
+      "name": "月亮造型小夜灯",
+      "category": "生活日用",
+      "price_cny": [
+        72,
+        108
+      ],
+      "description": "床头的一盏柔和暖光灯",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "照明"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "供电方式"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🌙",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g703",
+      "family_id": "thermos",
+      "name": "双层不锈钢保温杯",
+      "category": "生活日用",
+      "price_cny": [
+        112,
+        168
+      ],
+      "description": "出门可以装热水的保温杯",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "喝水"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🥤",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g704",
+      "family_id": "organizer",
+      "name": "桌面分类收纳盒",
+      "category": "生活日用",
+      "price_cny": [
+        56,
+        84
+      ],
+      "description": "可以把文具和零碎小物分开放",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "收纳"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "尺寸"
+      ],
+      "storage": "中等",
+      "use_frequency": "经常",
+      "icon": "📦",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g705",
+      "family_id": "umbrella",
+      "name": "折叠晴雨伞",
+      "category": "生活日用",
+      "price_cny": [
+        72,
+        108
+      ],
+      "description": "晴雨天都可以放进包里的伞",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "遮雨"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "☂️",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g706",
+      "family_id": "coffee-pot",
+      "name": "小型手冲咖啡壶",
+      "category": "生活日用",
+      "price_cny": [
+        144,
+        216
+      ],
+      "description": "慢慢冲一杯咖啡的玻璃壶",
+      "style_tags": [
+        "复古文艺"
+      ],
+      "function_tags": [
+        "冲饮"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "易碎",
+        "耗材"
+      ],
+      "storage": "中等",
+      "use_frequency": "经常",
+      "icon": "☕",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g707",
+      "family_id": "plant",
+      "name": "多肉盆栽",
+      "category": "生活日用",
+      "price_cny": [
+        32,
+        48
+      ],
+      "description": "一盆需要偶尔照料的小多肉",
+      "style_tags": [
+        "可可爱爱"
+      ],
+      "function_tags": [
+        "种植"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "需要养护"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🌵",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g708",
+      "family_id": "cooker",
+      "name": "迷你电煮锅",
+      "category": "生活日用",
+      "price_cny": [
+        160,
+        240
+      ],
+      "description": "一个人也能煮面的小锅",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "做饭"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "插座",
+        "清洗"
+      ],
+      "storage": "中等",
+      "use_frequency": "经常",
+      "icon": "🍲",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g709",
+      "family_id": "cat-rest",
+      "name": "猫咪陶瓷筷子架",
+      "category": "生活日用",
+      "price_cny": [
+        24,
+        36
+      ],
+      "description": "吃饭时可以把筷子放在小猫背上",
+      "style_tags": [
+        "可可爱爱"
+      ],
+      "function_tags": [
+        "用餐"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "易碎"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🐈",
+      "audience": "personalized",
+      "interest_tags": [
+        "猫咪"
+      ],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g710",
+      "family_id": "clay-kit",
+      "name": "手作陶泥体验材料盒",
+      "category": "生活日用",
+      "price_cny": [
+        80,
+        120
+      ],
+      "description": "在家捏一只自己的小碟子",
+      "style_tags": [
+        "有设计感"
+      ],
+      "function_tags": [
+        "手作"
+      ],
+      "scenario": "空闲时慢慢完成",
+      "selection_risks": [
+        "需要动手"
+      ],
+      "storage": "中等",
+      "use_frequency": "偶尔",
+      "icon": "🎨",
+      "audience": "personalized",
+      "interest_tags": [
+        "手工"
+      ],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g711",
+      "family_id": "snack-box",
+      "name": "饼干与茶包小礼盒",
+      "category": "生活日用",
+      "price_cny": [
+        68,
+        102
+      ],
+      "description": "四种饼干和独立包装的茶包",
+      "style_tags": [
+        "精致漂亮"
+      ],
+      "function_tags": [
+        "品尝"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "饮食过敏"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🍪",
+      "audience": "personalized",
+      "interest_tags": [
+        "美食"
+      ],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g712",
+      "family_id": "picnic-mat",
+      "name": "便携野餐垫",
+      "category": "生活日用",
+      "price_cny": [
+        96,
+        144
+      ],
+      "description": "折起来很小，展开可以坐两个人",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "户外"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "可折叠",
+      "use_frequency": "经常",
+      "icon": "🧺",
+      "audience": "personalized",
+      "interest_tags": [
+        "旅行"
+      ],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g713",
+      "family_id": "beanbag",
+      "name": "大号懒人沙发",
+      "category": "生活日用",
+      "price_cny": [
+        480,
+        720
+      ],
+      "description": "可以窝着看书的大坐垫",
+      "style_tags": [
+        "可可爱爱"
+      ],
+      "function_tags": [
+        "休息"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "占地方",
+      "use_frequency": "经常",
+      "icon": "🛋️",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g714",
+      "family_id": "blanket",
+      "name": "柔软盖毯",
+      "category": "生活日用",
+      "price_cny": [
+        104,
+        156
+      ],
+      "description": "午睡时盖在身上的小毯子",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "保暖"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "材质过敏"
+      ],
+      "storage": "中等",
+      "use_frequency": "经常",
+      "icon": "🛏️",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g715",
+      "family_id": "herb-kit",
+      "name": "香草种植套装",
+      "category": "生活日用",
+      "price_cny": [
+        60,
+        90
+      ],
+      "description": "从种子开始养一盆小薄荷",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "种植"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "需要养护"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🌱",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "g716",
+      "family_id": "sandwich-maker",
+      "name": "小型早餐三明治机",
+      "category": "生活日用",
+      "price_cny": [
+        208,
+        312
+      ],
+      "description": "可以压烤面包的早餐小机器",
+      "style_tags": [
+        "可可爱爱"
+      ],
+      "function_tags": [
+        "做饭"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "插座",
+        "清洗"
+      ],
+      "storage": "中等",
+      "use_frequency": "经常",
+      "icon": "🥪",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "rating"
+    },
+    {
+      "id": "p01a",
+      "family_id": "nightlight",
+      "name": "猫咪小夜灯",
+      "category": "生活日用",
+      "price_cny": [
+        72,
+        108
+      ],
+      "description": "一样的暖光和亮度，猫咪造型",
+      "style_tags": [
+        "可可爱爱"
+      ],
+      "function_tags": [
+        "照明"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "供电方式"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🌙",
+      "audience": "personalized",
+      "interest_tags": [
+        "猫咪"
+      ],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p01b",
+      "family_id": "nightlight",
+      "name": "简约月亮小夜灯",
+      "category": "生活日用",
+      "price_cny": [
+        72,
+        108
+      ],
+      "description": "一样的暖光和亮度，月亮造型",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "照明"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "供电方式"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🌙",
+      "audience": "personalized",
+      "interest_tags": [
+        "猫咪"
+      ],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p02a",
+      "family_id": "mug",
+      "name": "奶油白陶瓷杯",
+      "category": "生活日用",
+      "price_cny": [
+        52,
+        78
+      ],
+      "description": "同款三百毫升陶瓷杯，奶油白色",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "喝水"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "易碎"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "☕",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p02b",
+      "family_id": "mug",
+      "name": "淡紫色陶瓷杯",
+      "category": "生活日用",
+      "price_cny": [
+        52,
+        78
+      ],
+      "description": "同款三百毫升陶瓷杯，淡紫色",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "喝水"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "易碎"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "☕",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p03a",
+      "family_id": "notebook",
+      "name": "素面笔记本",
+      "category": "书籍文创",
+      "price_cny": [
+        36,
+        54
+      ],
+      "description": "同款本子，封面没有图案",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "记录"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "📓",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p03b",
+      "family_id": "notebook",
+      "name": "印有你选的图案的笔记本",
+      "category": "书籍文创",
+      "price_cny": [
+        36,
+        54
+      ],
+      "description": "同款本子，封面印你自己选的图案",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "记录"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "📓",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "自选图案",
+      "role": "pair"
+    },
+    {
+      "id": "p04a",
+      "family_id": "thermos",
+      "name": "膳魔师保温杯",
+      "category": "生活日用",
+      "price_cny": [
+        112,
+        168
+      ],
+      "description": "假设容量、保温和售后一样，膳魔师品牌",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "喝水"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🥤",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "膳魔师",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p04b",
+      "family_id": "thermos",
+      "name": "普通品牌保温杯",
+      "category": "生活日用",
+      "price_cny": [
+        112,
+        168
+      ],
+      "description": "假设容量、保温和售后一样，普通品牌",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "喝水"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🥤",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "普通品牌",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p05a",
+      "family_id": "ornament",
+      "name": "掌心大小的星球摆件",
+      "category": "周边收藏",
+      "price_cny": [
+        60,
+        90
+      ],
+      "description": "同款星球，同样价格，掌心大小",
+      "style_tags": [
+        "有设计感"
+      ],
+      "function_tags": [
+        "装饰"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "偶尔",
+      "icon": "🪐",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p05b",
+      "family_id": "ornament",
+      "name": "两只手大小的星球摆件",
+      "category": "周边收藏",
+      "price_cny": [
+        60,
+        90
+      ],
+      "description": "同款星球，同样价格，两只手大小",
+      "style_tags": [
+        "有设计感"
+      ],
+      "function_tags": [
+        "装饰"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "占地方",
+      "use_frequency": "偶尔",
+      "icon": "🪐",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p06a",
+      "family_id": "keyring",
+      "name": "猫咪钥匙扣",
+      "category": "首饰配饰",
+      "price_cny": [
+        28,
+        42
+      ],
+      "description": "同样材质和大小，一只小猫",
+      "style_tags": [
+        "可可爱爱"
+      ],
+      "function_tags": [
+        "整理钥匙"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🐾",
+      "audience": "personalized",
+      "interest_tags": [
+        "猫咪"
+      ],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p06b",
+      "family_id": "keyring",
+      "name": "小熊钥匙扣",
+      "category": "首饰配饰",
+      "price_cny": [
+        28,
+        42
+      ],
+      "description": "同样材质和大小，一只小熊",
+      "style_tags": [
+        "可可爱爱"
+      ],
+      "function_tags": [
+        "整理钥匙"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🐾",
+      "audience": "personalized",
+      "interest_tags": [
+        "猫咪"
+      ],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p07a",
+      "family_id": "speaker",
+      "name": "奶油白小音箱",
+      "category": "电子影像",
+      "price_cny": [
+        144,
+        216
+      ],
+      "description": "同款蓝牙音箱，奶油白外壳",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "听歌"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "蓝牙兼容"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🔊",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p07b",
+      "family_id": "speaker",
+      "name": "黑色小音箱",
+      "category": "电子影像",
+      "price_cny": [
+        144,
+        216
+      ],
+      "description": "同款蓝牙音箱，纯黑色外壳",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "听歌"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "蓝牙兼容"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🔊",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p08a",
+      "family_id": "pen",
+      "name": "普通纸盒装钢笔",
+      "category": "书籍文创",
+      "price_cny": [
+        192,
+        288
+      ],
+      "description": "同一支笔，简洁纸盒包装",
+      "style_tags": [
+        "精致漂亮"
+      ],
+      "function_tags": [
+        "书写"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "握笔习惯"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🖋️",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p08b",
+      "family_id": "pen",
+      "name": "礼盒丝带装钢笔",
+      "category": "书籍文创",
+      "price_cny": [
+        192,
+        288
+      ],
+      "description": "同一支笔，礼盒和丝带包装",
+      "style_tags": [
+        "精致漂亮"
+      ],
+      "function_tags": [
+        "书写"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "握笔习惯"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🖋️",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p09a",
+      "family_id": "tote",
+      "name": "纯色帆布袋",
+      "category": "包袋服饰",
+      "price_cny": [
+        80,
+        120
+      ],
+      "description": "同款帆布袋，素色没有图案",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "收纳"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "可折叠",
+      "use_frequency": "经常",
+      "icon": "👜",
+      "audience": "personalized",
+      "interest_tags": [
+        "音乐"
+      ],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p09b",
+      "family_id": "tote",
+      "name": "唱片图案帆布袋",
+      "category": "包袋服饰",
+      "price_cny": [
+        80,
+        120
+      ],
+      "description": "同款帆布袋，印有复古唱片",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "收纳"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "可折叠",
+      "use_frequency": "经常",
+      "icon": "👜",
+      "audience": "personalized",
+      "interest_tags": [
+        "音乐"
+      ],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p10a",
+      "family_id": "candle",
+      "name": "淡茶香蜡烛",
+      "category": "美妆香氛",
+      "price_cny": [
+        104,
+        156
+      ],
+      "description": "同样蜡材和大小，淡淡茶香",
+      "style_tags": [
+        "复古文艺"
+      ],
+      "function_tags": [
+        "香氛"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "明火",
+        "气味"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🕯️",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p10b",
+      "family_id": "candle",
+      "name": "淡花香蜡烛",
+      "category": "美妆香氛",
+      "price_cny": [
+        104,
+        156
+      ],
+      "description": "同样蜡材和大小，淡淡花香",
+      "style_tags": [
+        "复古文艺"
+      ],
+      "function_tags": [
+        "香氛"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "明火",
+        "气味"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🕯️",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p11a",
+      "family_id": "mirror",
+      "name": "圆形随身镜",
+      "category": "美妆香氛",
+      "price_cny": [
+        48,
+        72
+      ],
+      "description": "同样尺寸和材质，圆形外壳",
+      "style_tags": [
+        "精致漂亮"
+      ],
+      "function_tags": [
+        "整理仪容"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🪞",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p11b",
+      "family_id": "mirror",
+      "name": "方形随身镜",
+      "category": "美妆香氛",
+      "price_cny": [
+        48,
+        72
+      ],
+      "description": "同样尺寸和材质，方形外壳",
+      "style_tags": [
+        "精致漂亮"
+      ],
+      "function_tags": [
+        "整理仪容"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🪞",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p12a",
+      "family_id": "notebook",
+      "name": "普通品牌笔记本",
+      "category": "书籍文创",
+      "price_cny": [
+        36,
+        54
+      ],
+      "description": "假设纸张和装订一样，普通品牌",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "记录"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "📓",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "普通品牌",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p12b",
+      "family_id": "notebook",
+      "name": "MUJI笔记本",
+      "category": "书籍文创",
+      "price_cny": [
+        36,
+        54
+      ],
+      "description": "假设纸张和装订一样，MUJI品牌",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "记录"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "📓",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "MUJI",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p13a",
+      "family_id": "umbrella",
+      "name": "浅粉色晴雨伞",
+      "category": "生活日用",
+      "price_cny": [
+        72,
+        108
+      ],
+      "description": "同款折叠晴雨伞，浅粉色",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "遮雨"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "☂️",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p13b",
+      "family_id": "umbrella",
+      "name": "薄荷绿晴雨伞",
+      "category": "生活日用",
+      "price_cny": [
+        72,
+        108
+      ],
+      "description": "同款折叠晴雨伞，薄荷绿色",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "遮雨"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "☂️",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p14a",
+      "family_id": "beading",
+      "name": "串珠手链成品",
+      "category": "首饰配饰",
+      "price_cny": [
+        52,
+        78
+      ],
+      "description": "同样珠子，已经串好，直接戴",
+      "style_tags": [
+        "有趣搞怪"
+      ],
+      "function_tags": [
+        "手作"
+      ],
+      "scenario": "空闲时慢慢完成",
+      "selection_risks": [
+        "手围"
+      ],
+      "storage": "小巧",
+      "use_frequency": "偶尔",
+      "icon": "📿",
+      "audience": "personalized",
+      "interest_tags": [
+        "手工"
+      ],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p14b",
+      "family_id": "beading",
+      "name": "同款手链材料包",
+      "category": "首饰配饰",
+      "price_cny": [
+        52,
+        78
+      ],
+      "description": "同样珠子和工具，自己慢慢串",
+      "style_tags": [
+        "有趣搞怪"
+      ],
+      "function_tags": [
+        "手作"
+      ],
+      "scenario": "空闲时慢慢完成",
+      "selection_risks": [
+        "需要动手"
+      ],
+      "storage": "小巧",
+      "use_frequency": "偶尔",
+      "icon": "📿",
+      "audience": "personalized",
+      "interest_tags": [
+        "手工"
+      ],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p15a",
+      "family_id": "phone-stand",
+      "name": "素面手机支架",
+      "category": "电子影像",
+      "price_cny": [
+        32,
+        48
+      ],
+      "description": "同款支架，没有装饰图案",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "支撑手机"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "设备尺寸"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "📱",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p15b",
+      "family_id": "phone-stand",
+      "name": "笑脸图案手机支架",
+      "category": "电子影像",
+      "price_cny": [
+        32,
+        48
+      ],
+      "description": "同款支架，印着一个小笑脸",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "支撑手机"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "设备尺寸"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "📱",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p16a",
+      "family_id": "postcard",
+      "name": "风景照片明信片",
+      "category": "书籍文创",
+      "price_cny": [
+        28,
+        42
+      ],
+      "description": "同样的风景主题，用照片呈现",
+      "style_tags": [
+        "复古文艺"
+      ],
+      "function_tags": [
+        "记录"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "💌",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p16b",
+      "family_id": "postcard",
+      "name": "风景手绘明信片",
+      "category": "书籍文创",
+      "price_cny": [
+        28,
+        42
+      ],
+      "description": "同样的风景主题，用手绘呈现",
+      "style_tags": [
+        "复古文艺"
+      ],
+      "function_tags": [
+        "记录"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "💌",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p17a",
+      "family_id": "mug",
+      "name": "带手写卡片的杯子",
+      "category": "生活日用",
+      "price_cny": [
+        52,
+        78
+      ],
+      "description": "同一个杯子，附一句手写祝福",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "喝水"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "易碎"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "☕",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "手写祝福",
+      "role": "pair"
+    },
+    {
+      "id": "p17b",
+      "family_id": "mug",
+      "name": "带印刷卡片的杯子",
+      "category": "生活日用",
+      "price_cny": [
+        52,
+        78
+      ],
+      "description": "同一个杯子，相同祝福印在卡上",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "喝水"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "易碎"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "☕",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "印刷祝福",
+      "role": "pair"
+    },
+    {
+      "id": "p18a",
+      "family_id": "organizer",
+      "name": "透明收纳盒",
+      "category": "生活日用",
+      "price_cny": [
+        56,
+        84
+      ],
+      "description": "同款收纳盒，能看见里面的东西",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "收纳"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "尺寸"
+      ],
+      "storage": "中等",
+      "use_frequency": "经常",
+      "icon": "📦",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p18b",
+      "family_id": "organizer",
+      "name": "米白收纳盒",
+      "category": "生活日用",
+      "price_cny": [
+        56,
+        84
+      ],
+      "description": "同款收纳盒，米白色不透明",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "收纳"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "尺寸"
+      ],
+      "storage": "中等",
+      "use_frequency": "经常",
+      "icon": "📦",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p19a",
+      "family_id": "mug",
+      "name": "每天用的保温杯",
+      "category": "生活日用",
+      "price_cny": [
+        52,
+        78
+      ],
+      "description": "保温好，适合每天带出门",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "喝水"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "☕",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p19b",
+      "family_id": "mug",
+      "name": "印着共同回忆的纪念杯",
+      "category": "生活日用",
+      "price_cny": [
+        52,
+        78
+      ],
+      "description": "普通陶瓷杯，印着一次共同出游的照片",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "喝水",
+        "纪念"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "易碎"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "☕",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "共同回忆",
+      "role": "pair"
+    },
+    {
+      "id": "p20a",
+      "family_id": "mirror",
+      "name": "实惠简洁随身镜",
+      "category": "美妆香氛",
+      "price_cny": [
+        25,
+        35
+      ],
+      "description": "镜面一样清晰，塑料素面外壳",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "整理仪容"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🪞",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p20b",
+      "family_id": "mirror",
+      "name": "精致雕花随身镜",
+      "category": "美妆香氛",
+      "price_cny": [
+        100,
+        120
+      ],
+      "description": "镜面一样清晰，金属雕花外壳",
+      "style_tags": [
+        "精致漂亮"
+      ],
+      "function_tags": [
+        "整理仪容"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🪞",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p21a",
+      "family_id": "notebook",
+      "name": "天天用的计划本",
+      "category": "书籍文创",
+      "price_cny": [
+        36,
+        54
+      ],
+      "description": "记录每天安排，随时可以用",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "记录"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "📓",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p21b",
+      "family_id": "notebook",
+      "name": "偶尔玩的趣味问答本",
+      "category": "书籍文创",
+      "price_cny": [
+        36,
+        54
+      ],
+      "description": "聚会时翻开的趣味问答本",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "消遣"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "偶尔",
+      "icon": "📓",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p22a",
+      "family_id": "candle",
+      "name": "熟悉的淡茶香蜡烛",
+      "category": "美妆香氛",
+      "price_cny": [
+        104,
+        156
+      ],
+      "description": "假设你闻过并接受这个味道",
+      "style_tags": [
+        "复古文艺"
+      ],
+      "function_tags": [
+        "香氛"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "明火",
+        "气味"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🕯️",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p22b",
+      "family_id": "candle",
+      "name": "没试过的森林香蜡烛",
+      "category": "美妆香氛",
+      "price_cny": [
+        104,
+        156
+      ],
+      "description": "假设你没闻过，带来一点新鲜感",
+      "style_tags": [
+        "复古文艺"
+      ],
+      "function_tags": [
+        "香氛"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "明火",
+        "气味"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🕯️",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p23a",
+      "family_id": "tote",
+      "name": "自己选的实用帆布袋",
+      "category": "包袋服饰",
+      "price_cny": [
+        80,
+        120
+      ],
+      "description": "款式完全由你自己挑",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "收纳"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "可折叠",
+      "use_frequency": "经常",
+      "icon": "👜",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p23b",
+      "family_id": "tote",
+      "name": "朋友悄悄选的帆布袋",
+      "category": "包袋服饰",
+      "price_cny": [
+        80,
+        120
+      ],
+      "description": "假设朋友认真挑了，但你提前不知道款式",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "收纳"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "可折叠",
+      "use_frequency": "经常",
+      "icon": "👜",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p24a",
+      "family_id": "ornament",
+      "name": "小巧朴素桌面摆件",
+      "category": "周边收藏",
+      "price_cny": [
+        60,
+        90
+      ],
+      "description": "简洁素面，只占一个小角落",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "装饰"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "偶尔",
+      "icon": "🪐",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p24b",
+      "family_id": "ornament",
+      "name": "大一些的精致桌面摆件",
+      "category": "周边收藏",
+      "price_cny": [
+        60,
+        90
+      ],
+      "description": "细节丰富，需要更多桌面位置",
+      "style_tags": [
+        "精致漂亮"
+      ],
+      "function_tags": [
+        "装饰"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "占地方",
+      "use_frequency": "偶尔",
+      "icon": "🪐",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p25a",
+      "family_id": "snack-box",
+      "name": "熟悉口味的饼干礼盒",
+      "category": "生活日用",
+      "price_cny": [
+        68,
+        102
+      ],
+      "description": "六小袋平时吃过的经典口味",
+      "style_tags": [
+        "精致漂亮"
+      ],
+      "function_tags": [
+        "品尝"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "饮食过敏"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🍪",
+      "audience": "personalized",
+      "interest_tags": [
+        "美食"
+      ],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p25b",
+      "family_id": "snack-box",
+      "name": "新奇口味的饼干礼盒",
+      "category": "生活日用",
+      "price_cny": [
+        68,
+        102
+      ],
+      "description": "六小袋没吃过的特别口味",
+      "style_tags": [
+        "精致漂亮"
+      ],
+      "function_tags": [
+        "品尝"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "饮食过敏"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🍪",
+      "audience": "personalized",
+      "interest_tags": [
+        "美食"
+      ],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p26a",
+      "family_id": "walk-guide",
+      "name": "一本旅行攻略书",
+      "category": "书籍文创",
+      "price_cny": [
+        64,
+        96
+      ],
+      "description": "出发前可以照着规划行程",
+      "style_tags": [
+        "复古文艺"
+      ],
+      "function_tags": [
+        "探索"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "城市适用性"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🗺️",
+      "audience": "personalized",
+      "interest_tags": [
+        "旅行"
+      ],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p26b",
+      "family_id": "walk-guide",
+      "name": "一本旅行空白记录册",
+      "category": "书籍文创",
+      "price_cny": [
+        64,
+        96
+      ],
+      "description": "旅途中贴照片、写回忆",
+      "style_tags": [
+        "复古文艺"
+      ],
+      "function_tags": [
+        "记录",
+        "纪念"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "城市适用性"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🗺️",
+      "audience": "personalized",
+      "interest_tags": [
+        "旅行"
+      ],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p27a",
+      "family_id": "mug",
+      "name": "淡紫色早餐杯",
+      "category": "生活日用",
+      "price_cny": [
+        52,
+        78
+      ],
+      "description": "同款三百毫升杯，淡紫色",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "喝水"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "易碎"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "☕",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p27b",
+      "family_id": "mug",
+      "name": "奶油白早餐杯",
+      "category": "生活日用",
+      "price_cny": [
+        52,
+        78
+      ],
+      "description": "同款三百毫升杯，奶油白色",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "喝水"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "易碎"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "☕",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p28a",
+      "family_id": "ornament",
+      "name": "稍大的透明星球",
+      "category": "周边收藏",
+      "price_cny": [
+        60,
+        90
+      ],
+      "description": "同款同价，两只手大小",
+      "style_tags": [
+        "有设计感"
+      ],
+      "function_tags": [
+        "装饰"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "占地方",
+      "use_frequency": "偶尔",
+      "icon": "🪐",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p28b",
+      "family_id": "ornament",
+      "name": "小小的透明星球",
+      "category": "周边收藏",
+      "price_cny": [
+        60,
+        90
+      ],
+      "description": "同款同价，掌心大小",
+      "style_tags": [
+        "有设计感"
+      ],
+      "function_tags": [
+        "装饰"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "偶尔",
+      "icon": "🪐",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p29a",
+      "family_id": "umbrella",
+      "name": "薄荷绿便携伞",
+      "category": "生活日用",
+      "price_cny": [
+        72,
+        108
+      ],
+      "description": "同款便携晴雨伞，薄荷绿",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "遮雨"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "☂️",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p29b",
+      "family_id": "umbrella",
+      "name": "浅粉色便携伞",
+      "category": "生活日用",
+      "price_cny": [
+        72,
+        108
+      ],
+      "description": "同款便携晴雨伞，浅粉色",
+      "style_tags": [
+        "简简单单"
+      ],
+      "function_tags": [
+        "遮雨"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "☂️",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p30a",
+      "family_id": "pen",
+      "name": "丝带礼盒里的钢笔",
+      "category": "书籍文创",
+      "price_cny": [
+        192,
+        288
+      ],
+      "description": "同一支笔，盒子上有丝带",
+      "style_tags": [
+        "精致漂亮"
+      ],
+      "function_tags": [
+        "书写"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "握笔习惯"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🖋️",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    },
+    {
+      "id": "p30b",
+      "family_id": "pen",
+      "name": "简单纸盒里的钢笔",
+      "category": "书籍文创",
+      "price_cny": [
+        192,
+        288
+      ],
+      "description": "同一支笔，简单的纸盒",
+      "style_tags": [
+        "精致漂亮"
+      ],
+      "function_tags": [
+        "书写"
+      ],
+      "scenario": "日常生活",
+      "selection_risks": [
+        "握笔习惯"
+      ],
+      "storage": "小巧",
+      "use_frequency": "经常",
+      "icon": "🖋️",
+      "audience": "general",
+      "interest_tags": [],
+      "brand": "未指定",
+      "customization": "无",
+      "role": "pair"
+    }
+  ],
+  "pairs": [
+    {
+      "id": "p01",
+      "gift_ids": [
+        "p01a",
+        "p01b"
+      ],
+      "comparison_type": "controlled",
+      "tested_factors": [
+        "appearance"
+      ],
+      "changed_variables": [
+        "appearance"
+      ],
+      "confounds": [],
+      "audience": "personalized",
+      "consistency_of": null,
+      "interpretation": "情境中的局部选择；只解释列出的差异，不等于绝对评分。"
+    },
+    {
+      "id": "p02",
+      "gift_ids": [
+        "p02a",
+        "p02b"
+      ],
+      "comparison_type": "controlled",
+      "tested_factors": [
+        "color"
+      ],
+      "changed_variables": [
+        "color"
+      ],
+      "confounds": [],
+      "audience": "general",
+      "consistency_of": null,
+      "interpretation": "情境中的局部选择；只解释列出的差异，不等于绝对评分。"
+    },
+    {
+      "id": "p03",
+      "gift_ids": [
+        "p03a",
+        "p03b"
+      ],
+      "comparison_type": "controlled",
+      "tested_factors": [
+        "customization"
+      ],
+      "changed_variables": [
+        "customization",
+        "appearance"
+      ],
+      "confounds": [
+        "appearance"
+      ],
+      "audience": "general",
+      "consistency_of": null,
+      "interpretation": "情境中的局部选择；只解释列出的差异，不等于绝对评分。"
+    },
+    {
+      "id": "p04",
+      "gift_ids": [
+        "p04a",
+        "p04b"
+      ],
+      "comparison_type": "controlled",
+      "tested_factors": [
+        "brand"
+      ],
+      "changed_variables": [
+        "brand"
+      ],
+      "confounds": [],
+      "audience": "general",
+      "consistency_of": null,
+      "interpretation": "假设情境下的品牌偏好，不代表真实产品质量相等。"
+    },
+    {
+      "id": "p05",
+      "gift_ids": [
+        "p05a",
+        "p05b"
+      ],
+      "comparison_type": "controlled",
+      "tested_factors": [
+        "size"
+      ],
+      "changed_variables": [
+        "size"
+      ],
+      "confounds": [],
+      "audience": "general",
+      "consistency_of": null,
+      "interpretation": "情境中的局部选择；只解释列出的差异，不等于绝对评分。"
+    },
+    {
+      "id": "p06",
+      "gift_ids": [
+        "p06a",
+        "p06b"
+      ],
+      "comparison_type": "controlled",
+      "tested_factors": [
+        "theme"
+      ],
+      "changed_variables": [
+        "theme"
+      ],
+      "confounds": [],
+      "audience": "personalized",
+      "consistency_of": null,
+      "interpretation": "情境中的局部选择；只解释列出的差异，不等于绝对评分。"
+    },
+    {
+      "id": "p07",
+      "gift_ids": [
+        "p07a",
+        "p07b"
+      ],
+      "comparison_type": "controlled",
+      "tested_factors": [
+        "color"
+      ],
+      "changed_variables": [
+        "color"
+      ],
+      "confounds": [],
+      "audience": "general",
+      "consistency_of": null,
+      "interpretation": "情境中的局部选择；只解释列出的差异，不等于绝对评分。"
+    },
+    {
+      "id": "p08",
+      "gift_ids": [
+        "p08a",
+        "p08b"
+      ],
+      "comparison_type": "controlled",
+      "tested_factors": [
+        "packaging"
+      ],
+      "changed_variables": [
+        "packaging"
+      ],
+      "confounds": [],
+      "audience": "general",
+      "consistency_of": null,
+      "interpretation": "情境中的局部选择；只解释列出的差异，不等于绝对评分。"
+    },
+    {
+      "id": "p09",
+      "gift_ids": [
+        "p09a",
+        "p09b"
+      ],
+      "comparison_type": "controlled",
+      "tested_factors": [
+        "theme"
+      ],
+      "changed_variables": [
+        "theme"
+      ],
+      "confounds": [],
+      "audience": "personalized",
+      "consistency_of": null,
+      "interpretation": "情境中的局部选择；只解释列出的差异，不等于绝对评分。"
+    },
+    {
+      "id": "p10",
+      "gift_ids": [
+        "p10a",
+        "p10b"
+      ],
+      "comparison_type": "controlled",
+      "tested_factors": [
+        "scent"
+      ],
+      "changed_variables": [
+        "scent"
+      ],
+      "confounds": [],
+      "audience": "general",
+      "consistency_of": null,
+      "interpretation": "情境中的局部选择；只解释列出的差异，不等于绝对评分。"
+    },
+    {
+      "id": "p11",
+      "gift_ids": [
+        "p11a",
+        "p11b"
+      ],
+      "comparison_type": "controlled",
+      "tested_factors": [
+        "shape"
+      ],
+      "changed_variables": [
+        "shape"
+      ],
+      "confounds": [],
+      "audience": "general",
+      "consistency_of": null,
+      "interpretation": "情境中的局部选择；只解释列出的差异，不等于绝对评分。"
+    },
+    {
+      "id": "p12",
+      "gift_ids": [
+        "p12a",
+        "p12b"
+      ],
+      "comparison_type": "controlled",
+      "tested_factors": [
+        "brand"
+      ],
+      "changed_variables": [
+        "brand"
+      ],
+      "confounds": [],
+      "audience": "general",
+      "consistency_of": null,
+      "interpretation": "情境中的局部选择；只解释列出的差异，不等于绝对评分。"
+    },
+    {
+      "id": "p13",
+      "gift_ids": [
+        "p13a",
+        "p13b"
+      ],
+      "comparison_type": "controlled",
+      "tested_factors": [
+        "color"
+      ],
+      "changed_variables": [
+        "color"
+      ],
+      "confounds": [],
+      "audience": "general",
+      "consistency_of": null,
+      "interpretation": "情境中的局部选择；只解释列出的差异，不等于绝对评分。"
+    },
+    {
+      "id": "p14",
+      "gift_ids": [
+        "p14a",
+        "p14b"
+      ],
+      "comparison_type": "controlled",
+      "tested_factors": [
+        "participation"
+      ],
+      "changed_variables": [
+        "participation",
+        "effort",
+        "completion_state"
+      ],
+      "confounds": [
+        "effort",
+        "completion_state"
+      ],
+      "audience": "personalized",
+      "consistency_of": null,
+      "interpretation": "情境中的局部选择；只解释列出的差异，不等于绝对评分。"
+    },
+    {
+      "id": "p15",
+      "gift_ids": [
+        "p15a",
+        "p15b"
+      ],
+      "comparison_type": "controlled",
+      "tested_factors": [
+        "appearance"
+      ],
+      "changed_variables": [
+        "appearance"
+      ],
+      "confounds": [],
+      "audience": "general",
+      "consistency_of": null,
+      "interpretation": "情境中的局部选择；只解释列出的差异，不等于绝对评分。"
+    },
+    {
+      "id": "p16",
+      "gift_ids": [
+        "p16a",
+        "p16b"
+      ],
+      "comparison_type": "controlled",
+      "tested_factors": [
+        "art_style"
+      ],
+      "changed_variables": [
+        "art_style"
+      ],
+      "confounds": [],
+      "audience": "general",
+      "consistency_of": null,
+      "interpretation": "情境中的局部选择；只解释列出的差异，不等于绝对评分。"
+    },
+    {
+      "id": "p17",
+      "gift_ids": [
+        "p17a",
+        "p17b"
+      ],
+      "comparison_type": "controlled",
+      "tested_factors": [
+        "personal_note"
+      ],
+      "changed_variables": [
+        "personal_note"
+      ],
+      "confounds": [],
+      "audience": "general",
+      "consistency_of": null,
+      "interpretation": "情境中的局部选择；只解释列出的差异，不等于绝对评分。"
+    },
+    {
+      "id": "p18",
+      "gift_ids": [
+        "p18a",
+        "p18b"
+      ],
+      "comparison_type": "controlled",
+      "tested_factors": [
+        "opacity"
+      ],
+      "changed_variables": [
+        "opacity",
+        "color"
+      ],
+      "confounds": [
+        "color"
+      ],
+      "audience": "general",
+      "consistency_of": null,
+      "interpretation": "情境中的局部选择；只解释列出的差异，不等于绝对评分。"
+    },
+    {
+      "id": "p19",
+      "gift_ids": [
+        "p19a",
+        "p19b"
+      ],
+      "comparison_type": "tradeoff",
+      "tested_factors": [
+        "utility_vs_memory"
+      ],
+      "changed_variables": [
+        "utility_vs_memory",
+        "material",
+        "insulation",
+        "customization"
+      ],
+      "confounds": [
+        "material",
+        "insulation",
+        "customization"
+      ],
+      "audience": "general",
+      "consistency_of": null,
+      "interpretation": "情境中的局部选择；只解释列出的差异，不等于绝对评分。"
+    },
+    {
+      "id": "p20",
+      "gift_ids": [
+        "p20a",
+        "p20b"
+      ],
+      "comparison_type": "tradeoff",
+      "tested_factors": [
+        "price_vs_appearance"
+      ],
+      "changed_variables": [
+        "price_vs_appearance",
+        "price",
+        "material",
+        "appearance"
+      ],
+      "confounds": [
+        "price",
+        "material",
+        "appearance"
+      ],
+      "audience": "general",
+      "consistency_of": null,
+      "interpretation": "情境中的局部选择；只解释列出的差异，不等于绝对评分。"
+    },
+    {
+      "id": "p21",
+      "gift_ids": [
+        "p21a",
+        "p21b"
+      ],
+      "comparison_type": "tradeoff",
+      "tested_factors": [
+        "frequency_vs_fun"
+      ],
+      "changed_variables": [
+        "frequency_vs_fun",
+        "purpose",
+        "frequency",
+        "novelty"
+      ],
+      "confounds": [
+        "purpose",
+        "frequency",
+        "novelty"
+      ],
+      "audience": "general",
+      "consistency_of": null,
+      "interpretation": "情境中的局部选择；只解释列出的差异，不等于绝对评分。"
+    },
+    {
+      "id": "p22",
+      "gift_ids": [
+        "p22a",
+        "p22b"
+      ],
+      "comparison_type": "tradeoff",
+      "tested_factors": [
+        "familiarity_vs_novelty"
+      ],
+      "changed_variables": [
+        "familiarity_vs_novelty",
+        "scent",
+        "familiarity"
+      ],
+      "confounds": [
+        "scent",
+        "familiarity"
+      ],
+      "audience": "general",
+      "consistency_of": null,
+      "interpretation": "情境中的局部选择；只解释列出的差异，不等于绝对评分。"
+    },
+    {
+      "id": "p23",
+      "gift_ids": [
+        "p23a",
+        "p23b"
+      ],
+      "comparison_type": "tradeoff",
+      "tested_factors": [
+        "control_vs_surprise"
+      ],
+      "changed_variables": [
+        "control_vs_surprise",
+        "selection_control",
+        "uncertainty",
+        "surprise"
+      ],
+      "confounds": [
+        "selection_control",
+        "uncertainty",
+        "surprise"
+      ],
+      "audience": "general",
+      "consistency_of": null,
+      "interpretation": "情境中的局部选择；只解释列出的差异，不等于绝对评分。"
+    },
+    {
+      "id": "p24",
+      "gift_ids": [
+        "p24a",
+        "p24b"
+      ],
+      "comparison_type": "tradeoff",
+      "tested_factors": [
+        "storage_vs_appearance"
+      ],
+      "changed_variables": [
+        "storage_vs_appearance",
+        "size",
+        "detail",
+        "appearance"
+      ],
+      "confounds": [
+        "size",
+        "detail",
+        "appearance"
+      ],
+      "audience": "general",
+      "consistency_of": null,
+      "interpretation": "情境中的局部选择；只解释列出的差异，不等于绝对评分。"
+    },
+    {
+      "id": "p25",
+      "gift_ids": [
+        "p25a",
+        "p25b"
+      ],
+      "comparison_type": "tradeoff",
+      "tested_factors": [
+        "familiarity_vs_discovery"
+      ],
+      "changed_variables": [
+        "familiarity_vs_discovery",
+        "flavor",
+        "familiarity"
+      ],
+      "confounds": [
+        "flavor",
+        "familiarity"
+      ],
+      "audience": "personalized",
+      "consistency_of": null,
+      "interpretation": "情境中的局部选择；只解释列出的差异，不等于绝对评分。"
+    },
+    {
+      "id": "p26",
+      "gift_ids": [
+        "p26a",
+        "p26b"
+      ],
+      "comparison_type": "tradeoff",
+      "tested_factors": [
+        "guidance_vs_memory"
+      ],
+      "changed_variables": [
+        "guidance_vs_memory",
+        "purpose",
+        "effort",
+        "timing"
+      ],
+      "confounds": [
+        "purpose",
+        "effort",
+        "timing"
+      ],
+      "audience": "personalized",
+      "consistency_of": null,
+      "interpretation": "情境中的局部选择；只解释列出的差异，不等于绝对评分。"
+    },
+    {
+      "id": "p27",
+      "gift_ids": [
+        "p27a",
+        "p27b"
+      ],
+      "comparison_type": "consistency",
+      "tested_factors": [
+        "color"
+      ],
+      "changed_variables": [
+        "color"
+      ],
+      "confounds": [],
+      "audience": "general",
+      "consistency_of": "p02",
+      "interpretation": "与 p02 语义反向映射；只观察颜色选择的局部稳定性。"
+    },
+    {
+      "id": "p28",
+      "gift_ids": [
+        "p28a",
+        "p28b"
+      ],
+      "comparison_type": "consistency",
+      "tested_factors": [
+        "size"
+      ],
+      "changed_variables": [
+        "size"
+      ],
+      "confounds": [],
+      "audience": "general",
+      "consistency_of": "p05",
+      "interpretation": "情境中的局部选择；只解释列出的差异，不等于绝对评分。"
+    },
+    {
+      "id": "p29",
+      "gift_ids": [
+        "p29a",
+        "p29b"
+      ],
+      "comparison_type": "consistency",
+      "tested_factors": [
+        "color"
+      ],
+      "changed_variables": [
+        "color"
+      ],
+      "confounds": [],
+      "audience": "general",
+      "consistency_of": "p13",
+      "interpretation": "情境中的局部选择；只解释列出的差异，不等于绝对评分。"
+    },
+    {
+      "id": "p30",
+      "gift_ids": [
+        "p30a",
+        "p30b"
+      ],
+      "comparison_type": "consistency",
+      "tested_factors": [
+        "packaging"
+      ],
+      "changed_variables": [
+        "packaging"
+      ],
+      "confounds": [],
+      "audience": "general",
+      "consistency_of": "p08",
+      "interpretation": "情境中的局部选择；只解释列出的差异，不等于绝对评分。"
+    }
+  ]
+}

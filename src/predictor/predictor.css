@@ -1,7 +1,3 @@
-.prediction-entry{max-width:365px;justify-content:space-between;margin-top:12px;min-height:54px;border-radius:18px;background:#f2ecf6;border-color:#e3d9ec;color:#85698f;font-size:14px}
-.prediction-entry>span{display:flex;align-items:center;gap:8px}.prediction-entry .prediction-entry-lock{font-size:10px;color:#9986a1;gap:4px}
-.predictor-header-badge{display:flex;align-items:center;gap:6px;color:#987b90;font-size:11px;white-space:nowrap}
-.predictor-loading{min-height:65dvh;display:flex;align-items:center;justify-content:center;gap:10px;color:#987b90;font-size:12px}
 .predictor-lock,.predictor-page{animation:appear .2s ease-out}
 .predictor-lock{max-width:520px;margin:auto;padding:14px 24px 30px}
 .predictor-back{justify-content:flex-start;padding:0;min-height:44px}
@@ -63,13 +59,13 @@
 .predictor-result-exit{margin:12px auto -10px;font-size:11px}.prediction-error,.prediction-stale{padding:9px 12px;border-radius:10px;background:#fbefdf;color:#9d7b54;font-size:11px;line-height:1.8;margin:12px 0}
 @keyframes pin-shake{25%,75%{transform:translateX(-5px)}50%{transform:translateX(5px)}}
 @media(max-width:760px){
-  .prediction-entry{max-width:none}.predictor-page{padding:8px 20px 26px;max-width:520px}
+  .predictor-page{padding:8px 20px 26px;max-width:520px}
   .predictor-columns{grid-template-columns:1fr;gap:18px}.predictor-controls{padding:20px}.predictor-heading{padding:15px 0 20px}
   .predictor-heading h1{font-size:27px}.predictor-heading p{font-size:11px}.predictor-result{position:static}
   .predictor-slider-row{padding-top:10px;padding-bottom:8px}.predictor-scores{margin-top:20px!important}
-  .predictor-header-badge{font-size:9px;gap:4px}.pin-panel{padding-top:14px}
+  .pin-panel{padding-top:14px}
 }
-@media(max-width:380px){.predictor-page{padding-inline:14px}.predictor-controls{padding:16px}.predictor-category-grid{gap:6px}.predictor-category-grid b{font-size:10px}.predictor-controls legend>small{font-size:8px}.predictor-header-badge{font-size:8px}.predictor-lock{padding-inline:18px}}
+@media(max-width:380px){.predictor-page{padding-inline:14px}.predictor-controls{padding:16px}.predictor-category-grid{gap:6px}.predictor-category-grid b{font-size:10px}.predictor-controls legend>small{font-size:8px}.predictor-lock{padding-inline:18px}}
 @media(max-height:700px) and (max-width:760px){
   .predictor-lock{padding-top:5px;padding-bottom:14px}.pin-panel{padding-top:0}.pin-mascot{width:42px;height:42px;border-radius:14px;margin-bottom:12px}.pin-mascot>svg:first-child{width:27px}
   .pin-panel .eyebrow{display:none}.pin-panel h1{font-size:23px;margin-bottom:8px}.pin-panel>p{font-size:11px;margin-bottom:6px}

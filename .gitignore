@@ -14,3 +14,5 @@ train_for_gpt.json
 holdout_private.json
 raw_session*.json
 synthetic_candidates*.json
+training_data.json
+*.npz

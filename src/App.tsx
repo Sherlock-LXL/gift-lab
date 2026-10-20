@@ -1,11 +1,13 @@
-import { useEffect, useRef, useState } from 'react';
-import { ArrowRight, Cat, Check, ChevronLeft, Clock3, Copy, Download, Gift as GiftIcon, Heart, Leaf, MoreHorizontal, RotateCcw, Share2, ShieldCheck, Sparkles, X } from 'lucide-react';
+import { lazy, Suspense, useCallback, useEffect, useRef, useState } from 'react';
+import { ArrowRight, Cat, Check, ChevronLeft, Clock3, Copy, Download, Gift as GiftIcon, Heart, Leaf, LockKeyhole, MoreHorizontal, RotateCcw, Share2, ShieldCheck, Sparkles, X } from 'lucide-react';
 import { bank, choose, giftById, newSession, progress, rate, savePreference, STORAGE_KEY, summarize } from './engine';
 import { radar, reasonsFor, specialOptions } from './data/radar';
 import { copyData, download, exportJSON, loadSession, saveSession, shareFile } from './storage';
 import type { AnswerStatus, Gift, Preference, Session } from './types';
 import RewardExperience, { PrizeCard } from './RewardExperience';
 import { clearRewards, type Prize } from './rewardMachine';
+
+const Predictor = lazy(() => import('./predictor/Predictor'));
 
 function GiftArt({gift,small=false}:{gift:Gift;small?:boolean}) {
   return <div className={`gift-art ${small?'small':''}`} data-category={bank.categories.indexOf(gift.category)}>
@@ -14,7 +16,7 @@ function GiftArt({gift,small=false}:{gift:Gift;small?:boolean}) {
   </div>;
 }
 function Price({gift}:{gift:Gift}) {return <span className="price">约 ¥{gift.price_cny[0]}–{gift.price_cny[1]}</span>;}
-function Welcome({session,onStart,onResume}:{session:Session|null;onStart:()=>void;onResume:()=>void}) {
+function Welcome({session,onStart,onResume,onPredict}:{session:Session|null;onStart:()=>void;onResume:()=>void;onPredict:()=>void}) {
   return <main className="welcome">
     <section className="welcome-copy">
       <div className="eyebrow"><span/> 一份关于你的，小小好奇</div>
@@ -24,6 +26,7 @@ function Welcome({session,onStart,onResume}:{session:Session|null;onStart:()=>vo
       <div className="pills"><span><Clock3 size={15}/> 大概 10 分钟</span><span><GiftIcon size={15}/> 最后有个小惊喜</span></div>
       <button className="primary start" onClick={session?onResume:onStart}>{session?'继续我的小冒险':'开启我的小冒险'}<ArrowRight size={20}/></button>
       {session && <p className="resume-note">已经完成 {progress(session)}% · 上次的选择都在</p>}
+      <button className="secondary prediction-entry" onClick={onPredict}><span><Sparkles size={17}/>礼物喜好预测</span><span className="prediction-entry-lock"><LockKeyhole size={13}/>密码进入</span></button>
       <p className="privacy"><ShieldCheck size={16}/><span>你的选择只保存在本机。完成后，可以自己决定是否分享给小游戏作者，用于礼物偏好 AI 实验。开始即同意本机保存，任何题都可以跳过。</span></p>
     </section>
     <section className="hero-art" aria-label="小猫和礼物盒">
@@ -148,6 +151,25 @@ function Result({session,onCapture,onPrizeCapture,onDownload,onShare,onCopy,onRe
 export default function App() {
   const [initial]=useState(loadSession);
   const [session,setSession]=useState<Session|null>(initial.session),[entered,setEntered]=useState(false);
+  const [predicting,setPredicting]=useState(()=>location.hash==='#predict');
+  const predictingRef=useRef(predicting);
+  useEffect(()=>{predictingRef.current=predicting;},[predicting]);
+  useEffect(()=>{
+    const sync=()=>{const active=location.hash==='#predict';predictingRef.current=active;setPredicting(active);setEntered(false);};
+    window.addEventListener('popstate',sync);window.addEventListener('hashchange',sync);
+    return()=>{window.removeEventListener('popstate',sync);window.removeEventListener('hashchange',sync);};
+  },[]);
+  const closePredictor=useCallback(()=>{
+    predictingRef.current=false;setPredicting(false);setEntered(false);
+    if(history.state?.giftPredictor)history.back();
+    else history.replaceState(null,'',location.pathname+location.search);
+    window.scrollTo({top:0,behavior:'instant'});
+  },[]);
+  function openPredictor(){
+    history.pushState({giftPredictor:true},'','#predict');
+    predictingRef.current=true;setPredicting(true);setEntered(false);setMenu(false);
+    window.scrollTo({top:0,behavior:'instant'});
+  }
   const [storageError,setStorageError]=useState(initial.error),[menu,setMenu]=useState(false),[notice,setNotice]=useState('');
   const [modal,setModal]=useState<'clear'|'restart'|'capture'|'prize'|'copy'|'share'|null>(null),[copyText,setCopyText]=useState('');
   const [capturedPrize,setCapturedPrize]=useState<Prize|null>(null);
@@ -163,7 +185,7 @@ export default function App() {
     const tick=()=>{
       const t=Date.now(),elapsed=(t-lastTick.current)/1000;lastTick.current=t;
       const s=sessionRef.current;
-      if(s && !s.completed && document.visibilityState==='visible' && t-lastAction.current<60000 && elapsed<15) {
+      if(s && !s.completed && !predictingRef.current && document.visibilityState==='visible' && t-lastAction.current<60000 && elapsed<15) {
         const next={...s,active_seconds:Math.round((s.active_seconds+elapsed)*10)/10};
         sessionRef.current=next;setSession(next);
         if(!saveSession(next))setStorageError('浏览器暂时存不了进度，请复制数据备份。');
@@ -236,19 +258,20 @@ export default function App() {
     try{localStorage.removeItem(STORAGE_KEY);}catch{/* Starting in memory still works; save reports failures. */}
     setModal(null);setLastRating(null);setReasonIndex(null);commit(newSession());setEntered(true);
   }
-  const current=entered&&session?session.cursor.stage:'welcome',isGame=['radar','rating','pair'].includes(current);
+  const current=predicting?'predictor':entered&&session?session.cursor.stage:'welcome',isGame=['radar','rating','pair'].includes(current);
   const stageLabel=current==='radar'?'快乐雷达':current==='rating'?'礼物盲盒':'心动二选一';
   const reasonAnswer=session&&reasonIndex!==null?session.gift_ratings.find(r=>r.gift_id===session.plan.ratings[reasonIndex].gift_id):null;
   return <>
     <header className={`site-header ${isGame?'playing':''}`}>
-      <div className="header-inner"><a className="brand" href="./" onClick={e=>{e.preventDefault();setEntered(false);}}><span className="brand-icon"><GiftIcon size={20}/></span><span>礼物偏好研究所<small>把小小的喜欢，认真收好</small></span></a>
-        <div className="header-right"><span className="local-badge"><span/>{storageError?'记得备份哦':'小小心意，本机珍藏'}</span><button className="icon-button" aria-label="更多选项" onClick={()=>setMenu(!menu)}><MoreHorizontal size={23}/></button></div>
+      <div className="header-inner"><a className="brand" href="./" onClick={e=>{e.preventDefault();if(predicting)closePredictor();else setEntered(false);}}><span className="brand-icon"><GiftIcon size={20}/></span><span>礼物偏好研究所<small>把小小的喜欢，认真收好</small></span></a>
+        <div className="header-right">{predicting?<span className="predictor-header-badge"><LockKeyhole size={13}/>私人预测室</span>:<><span className="local-badge"><span/>{storageError?'记得备份哦':'小小心意，本机珍藏'}</span><button className="icon-button" aria-label="更多选项" onClick={()=>setMenu(!menu)}><MoreHorizontal size={23}/></button></>}</div>
         {menu&&<div className="menu"><button onClick={()=>{copy();setMenu(false);}}>复制当前数据备份</button><button onClick={()=>{setModal('restart');setMenu(false);}}>重新开始</button><button onClick={()=>{setModal('clear');setMenu(false);}}>清除本机数据</button></div>}
       </div>
       {isGame&&session&&<div className="progress-wrap"><div className="progress-meta"><button className="back" onClick={back}><ChevronLeft size={17}/>上一题</button><span>{stageLabel} · {session.cursor.index+1} / {current==='radar'?7:current==='rating'?24:30}</span><strong>{progress(session)}%</strong></div><div className="progress-track" role="progressbar" aria-label="总进度" aria-valuenow={progress(session)} aria-valuemin={0} aria-valuemax={100}><div style={{width:`${progress(session)}%`}}/></div></div>}
     </header>
     {storageError&&<div className="storage-warning" role="alert">{storageError}<button onClick={copy}>复制备份</button></div>}
-    {current==='welcome'&&<Welcome session={session} onResume={()=>setEntered(true)} onStart={()=>{if(initial.error){setModal('restart');return;}commit(newSession());setEntered(true);}}/>}
+    {current==='welcome'&&<Welcome session={session} onPredict={openPredictor} onResume={()=>setEntered(true)} onStart={()=>{if(initial.error){setModal('restart');return;}commit(newSession());setEntered(true);}}/>}
+    {predicting&&<Suspense fallback={<main className="predictor-loading" role="status"><Cat size={34}/><span>正在打开小小预测室…</span></main>}><Predictor onExit={closePredictor}/></Suspense>}
     {isGame&&session&&<main className="game" key={session.cursor.stage+session.cursor.index}>
       {current==='radar'&&<RadarQuestion session={session} onAnswer={p=>{const i=session.cursor.index;move(savePreference(session,p),i===6?'rating':'radar',i===6?0:i+1);}}/>}
       {current==='rating'&&<RatingQuestion session={session} onRate={answerRating}/>}

@@ -1,0 +1,105 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://gift-chooser.local/schema/session-1.0.json",
+  "title": "Gift Chooser local raw human session 1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version","question_bank_version","session_id","consent","created_at","completed_at","active_seconds","completed","preferences","gift_ratings","pairwise_choices","plan","cursor","gift_metadata"],
+  "properties": {
+    "schema_version": {"const":"1.0"},
+    "question_bank_version": {"const":"1.0"},
+    "session_id": {"type":"string","pattern":"^[a-f0-9-]{36}$"},
+    "consent": {"const":true},
+    "created_at": {"$ref":"#/definitions/time"},
+    "completed_at": {"anyOf":[{"type":"null"},{"$ref":"#/definitions/time"}]},
+    "active_seconds": {"type":"number","minimum":0},
+    "completed": {"type":"boolean"},
+    "preferences": {
+      "type":"object","additionalProperties":false,
+      "properties": {
+        "categories":{"$ref":"#/definitions/preference"},
+        "styles":{"$ref":"#/definitions/preference"},
+        "colors":{"$ref":"#/definitions/preference"},
+        "delights":{"$ref":"#/definitions/preference"},
+        "price":{"$ref":"#/definitions/preference"},
+        "avoid":{"$ref":"#/definitions/preference"},
+        "brands":{"$ref":"#/definitions/preference"}
+      }
+    },
+    "gift_ratings": {"type":"array","maxItems":24,"items":{"$ref":"#/definitions/rating"}},
+    "pairwise_choices": {"type":"array","maxItems":30,"items":{"$ref":"#/definitions/choice"}},
+    "plan": {
+      "type":"object","additionalProperties":false,
+      "required":["seed","fixed_at","ratings","pairs","personalization_basis"],
+      "properties":{
+        "seed":{"type":"integer","minimum":0,"maximum":4294967295},
+        "fixed_at":{"$ref":"#/definitions/time"},
+        "personalization_basis":{"type":"string"},
+        "ratings":{"type":"array","minItems":24,"maxItems":24,"items":{
+          "type":"object","additionalProperties":false,"required":["gift_id","split"],
+          "properties":{"gift_id":{"type":"string"},"split":{"enum":["train","holdout"]}}
+        }},
+        "pairs":{"type":"array","minItems":30,"maxItems":30,"items":{
+          "type":"object","additionalProperties":false,"required":["pair_id","left_gift_id","right_gift_id"],
+          "properties":{"pair_id":{"type":"string"},"left_gift_id":{"type":"string"},"right_gift_id":{"type":"string"}}
+        }}
+      }
+    },
+    "cursor":{
+      "type":"object","additionalProperties":false,"required":["stage","index"],
+      "properties":{"stage":{"enum":["welcome","radar","rating","pair","result"]},"index":{"type":"integer","minimum":0,"maximum":29}}
+    },
+    "gift_metadata":{"type":"array","minItems":84,"maxItems":84,"items":{"$ref":"#/definitions/gift"}}
+  },
+  "definitions": {
+    "strings":{"type":"array","items":{"type":"string"},"uniqueItems":true},
+    "time":{"type":"string","pattern":"^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d{3}Z$"},
+    "preference":{
+      "type":"object","additionalProperties":false,
+      "required":["question_id","positive","negative","uncertain","skipped","answered_at"],
+      "properties":{
+        "question_id":{"enum":["categories","styles","colors","delights","price","avoid","brands"]},
+        "positive":{"$ref":"#/definitions/strings"},"negative":{"$ref":"#/definitions/strings"},
+        "uncertain":{"$ref":"#/definitions/strings"},"skipped":{"type":"boolean"},"answered_at":{"$ref":"#/definitions/time"}
+      }
+    },
+    "rating":{
+      "type":"object","additionalProperties":false,
+      "required":["answer_id","gift_id","rating","status","reason_tags","skipped","split","question_order","metadata_ref","answered_at","source"],
+      "properties":{
+        "answer_id":{"type":"string"},"gift_id":{"type":"string"},
+        "rating":{"type":["integer","null"],"minimum":0,"maximum":10},
+        "status":{"enum":["rated","uncertain","unfamiliar","skipped"]},
+        "reason_tags":{"$ref":"#/definitions/strings"},"skipped":{"type":"boolean"},
+        "split":{"enum":["train","holdout"]},"question_order":{"type":"integer","minimum":1,"maximum":24},
+        "metadata_ref":{"type":"string"},"answered_at":{"$ref":"#/definitions/time"},"source":{"const":"human"}
+      }
+    },
+    "choice":{
+      "type":"object","additionalProperties":false,
+      "required":["answer_id","pair_id","left_gift_id","right_gift_id","chosen","tested_factors","comparison_type","actual_display_order","skipped","question_order","answered_at","source"],
+      "properties":{
+        "answer_id":{"type":"string"},"pair_id":{"type":"string"},"left_gift_id":{"type":"string"},"right_gift_id":{"type":"string"},
+        "chosen":{"enum":["left","right","tie","neither","unknown"]},"tested_factors":{"$ref":"#/definitions/strings"},
+        "comparison_type":{"enum":["controlled","tradeoff","consistency"]},
+        "actual_display_order":{"type":"array","minItems":2,"maxItems":2,"items":{"type":"string"},"uniqueItems":true},
+        "skipped":{"type":"boolean"},"question_order":{"type":"integer","minimum":1,"maximum":30},
+        "answered_at":{"$ref":"#/definitions/time"},"source":{"const":"human"}
+      }
+    },
+    "gift":{
+      "type":"object","additionalProperties":false,
+      "required":["id","family_id","name","category","price_cny","description","style_tags","function_tags","scenario","selection_risks","storage","use_frequency","icon","audience","interest_tags","brand","customization","role"],
+      "properties":{
+        "id":{"type":"string"},"family_id":{"type":"string"},"name":{"type":"string"},
+        "category":{"enum":["首饰配饰","周边收藏","书籍文创","电子影像","美妆香氛","包袋服饰","生活日用"]},
+        "price_cny":{"type":"array","minItems":2,"maxItems":2,"items":{"type":"integer","minimum":0}},
+        "description":{"type":"string"},"style_tags":{"$ref":"#/definitions/strings"},"function_tags":{"$ref":"#/definitions/strings"},
+        "scenario":{"type":"string"},"selection_risks":{"$ref":"#/definitions/strings"},
+        "storage":{"type":"string"},"use_frequency":{"type":"string"},"icon":{"type":"string"},
+        "audience":{"enum":["general","personalized"]},"interest_tags":{"$ref":"#/definitions/strings"},
+        "brand":{"type":"string"},"customization":{"type":"string"},"role":{"enum":["rating","pair"]}
+      }
+    }
+  }
+}

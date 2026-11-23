@@ -1,70 +1,77 @@
-# 礼物偏好研究所
+# 礼物偏好研究所 · Gift Preference Lab
 
-手机优先的 React + Vite + TypeScript 小游戏。玩家可以完成快乐雷达、24 件礼物评分和 30 组二选一，也可以通过密码进入本地运行的礼物喜好预测页。
+[中文](#中文) · [English](#english) · [在线体验](https://sherlock-lxl.github.io/gift-lab/)
 
-## 隐私边界
+## 中文
 
-- 无登录、无后端，不自动上传任何回答。
-- 答题进度只保存在浏览器 `localStorage`。
-- 玩家可自主下载或分享 JSON。
-- 本仓库不包含任何真实玩家数据、聊天记录、截图、密钥或旧项目 Git 历史。
-- 预测模型来自项目作者提供的 `final_model.npz`，只发布 AES-GCM 加密后的权重，不发布训练数据或明文权重。
+手机优先的 React、Vite、TypeScript 小游戏：完成快乐雷达、24 件礼物评分和 30 组二选一，或解锁本地礼物喜好预测。
 
-## 礼物喜好预测
+### 主要功能
 
-首页的「礼物喜好预测」入口需要六位数字密码。解锁后，浏览器在本机执行原模型的 `14 → 8 ReLU → 1` 前向传播：
+- 答题进度保存在浏览器 `localStorage`，可自主下载或分享 JSON。
+- 六位密码解锁预测页；七项 0–10 分评分（步长 0.5）与七类 one-hot 输入，经归一化后送入原 `14 → 8 ReLU → 1` 模型。
+- 线性输出仅在显示时裁剪到 0–10 分，与原 Python 应用一致。
+- 预测输入与结果不保存；退出、切到后台或刷新后重新锁定。
 
-- 七项 0–10 分滑块先除以 10，步长为 0.5 分。
-- 七种礼物类型转换为固定顺序的 one-hot 输入。
-- 线性输出只在显示时裁剪到 0–10 分，与原 Python `app.py` 一致。
-- 预测输入和结果不写入答题 JSON、`localStorage` 或任何网络服务；退出、切到后台或刷新会重新锁定。
+### 运行
 
-这是纯静态站点上的轻量隐私保护，不等同于服务端身份认证。加密文件、解密代码和 PBKDF2 参数都需要随网页发布，因此具有足够时间和技术能力的人仍可能离线尝试六位密码。需要严格访问控制时，应把模型迁移到带身份认证的后端，不能只依赖前端密码。
-
-更新模型时，不要复制训练数据或明文 `.npz` 到本仓库。使用原模型项目的 Python 环境运行：
-
-```bash
-python scripts/pack-predictor.py /absolute/path/to/models/final_model.npz
-```
-
-脚本会隐藏读取六位密码，并只更新 `src/predictor/model.vault.json`。
-
-## 本地开发
-
-需要 Node.js 22.12 或更高版本：
+需要 Node.js 22.12+：
 
 ```bash
 npm ci
 npm run dev
-```
-
-默认生产基路径为 `/gift-lab/`。本地检查生产构建：
-
-```bash
 npm test
 npm run build
 npm run preview
 ```
 
-## GitHub Pages 部署
+推送 `main` 或手动运行 [部署工作流](.github/workflows/deploy.yml)，依次检查题库可复现性、运行测试、构建并部署 GitHub Pages。生产基路径为 `/gift-lab/`。
 
-[部署工作流](.github/workflows/deploy.yml)在以下情况运行：
+### 模型与数据
 
-- 推送到 `main`
-- 在 GitHub Actions 页面手动运行
+无登录或后端，回答不自动上传。原 `final_model.npz` 仅以 AES-GCM 加密权重发布，训练数据与明文权重不随网站提供。六位前端密码提供轻量保护，存在离线猜测可能。
 
-工作流在 Ubuntu Runner 上依次执行锁定依赖安装、题库可复现检查、单元测试和 Vite 生产构建，然后将 `dist/` 发布到 GitHub Pages。Vite 基路径固定为 `/gift-lab/`。
-
-首次部署时，仓库所有者需要在 GitHub 打开：
-
-`Settings → Pages → Build and deployment → Source → GitHub Actions`
-
-后续更新只需向 `main` 推送提交：
+更新权重时，在含 NumPy 与 Node.js 的环境运行：
 
 ```bash
-git add .
-git commit -m "Update site"
-git push origin main
+python scripts/pack-predictor.py /absolute/path/to/models/final_model.npz
 ```
 
-线上地址：<https://sherlock-lxl.github.io/gift-lab/>
+脚本隐藏读取密码，仅更新 `src/predictor/model.vault.json`。
+
+## English
+
+A mobile-first React, Vite and TypeScript game with a happiness radar, ratings for 24 gifts, 30 pairwise choices, and a local gift preference predictor.
+
+### Features
+
+- Progress stays in browser `localStorage`; players can export or share JSON.
+- A six-digit passcode unlocks the original `14 → 8 ReLU → 1` model. Seven 0–10 ratings, in 0.5 increments, are normalized and combined with seven one-hot categories.
+- The linear output is clipped to 0–10 only for display, matching the original Python application.
+- Predictor inputs and results are not saved. Leaving, backgrounding or refreshing locks the page.
+
+### Run
+
+Requires Node.js 22.12+:
+
+```bash
+npm ci
+npm run dev
+npm test
+npm run build
+npm run preview
+```
+
+Push to `main` or run the [deployment workflow](.github/workflows/deploy.yml) to verify the reproducible question bank, test, build and deploy GitHub Pages. The production base path is `/gift-lab/`.
+
+### Model and data
+
+There is no login or backend, and answers are not uploaded automatically. Only AES-GCM encrypted weights from the original `final_model.npz` are published; training data and plaintext weights are excluded. The six-digit frontend passcode provides lightweight protection and permits offline guessing.
+
+To update weights in an environment with NumPy and Node.js:
+
+```bash
+python scripts/pack-predictor.py /absolute/path/to/models/final_model.npz
+```
+
+The script reads the passcode without echo and updates only `src/predictor/model.vault.json`.

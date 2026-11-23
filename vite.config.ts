@@ -1,9 +1,9 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  // GitHub Pages serves this repository from /gift-lab/.
-  base: process.env.VITE_BASE_PATH || '/gift-lab/',
+  // GitHub Pages 从 /gift-lab/ 提供此仓库。
+  base: process.env.VITE_BASE_PATH || "/gift-lab/",
   build: { sourcemap: false },
 });

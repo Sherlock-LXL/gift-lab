@@ -1,10 +1,10 @@
-"""Encrypt an existing final_model.npz; never read training data or retrain.
+"""加密已有 final_model.npz，只向网站写入加密权重。
 
-Run with a Python that has NumPy, and Node.js on PATH:
+需要 NumPy 与 PATH 中的 Node.js：
   python scripts/pack-predictor.py /path/to/final_model.npz
-The passcode is requested without echo. GIFT_MODEL_PIN may be used in automation.
-Only the encrypted envelope is written into the website.
+密码输入不回显；自动化可使用 GIFT_MODEL_PIN。
 """
+
 import getpass
 import json
 import os
@@ -15,10 +15,20 @@ import sys
 import numpy as np
 
 FEATURE_ORDER = [
-    "interest_match", "need_utility", "emotional_personalization", "aesthetic_confidence",
-    "selection_safety", "storage_friendliness", "value_fit",
-    "cat_jewelry_accessories", "cat_fandom_collectibles", "cat_books_stationery",
-    "cat_electronics_imaging", "cat_beauty_fragrance", "cat_bags_clothing", "cat_daily_life",
+    "interest_match",
+    "need_utility",
+    "emotional_personalization",
+    "aesthetic_confidence",
+    "selection_safety",
+    "storage_friendliness",
+    "value_fit",
+    "cat_jewelry_accessories",
+    "cat_fandom_collectibles",
+    "cat_books_stationery",
+    "cat_electronics_imaging",
+    "cat_beauty_fragrance",
+    "cat_bags_clothing",
+    "cat_daily_life",
 ]
 ENCRYPT = """
 import { randomBytes, pbkdf2Sync, createCipheriv } from 'node:crypto';
@@ -55,7 +65,9 @@ def main():
     result = subprocess.run(
         ["node", "--input-type=module", "-e", ENCRYPT],
         input=json.dumps({"pin": pin, "model": model}, allow_nan=False),
-        text=True, capture_output=True, check=True,
+        text=True,
+        capture_output=True,
+        check=True,
     )
     output = Path(__file__).resolve().parents[1] / "src/predictor/model.vault.json"
     output.parent.mkdir(parents=True, exist_ok=True)
